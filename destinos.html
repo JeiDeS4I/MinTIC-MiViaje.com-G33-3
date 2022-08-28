@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html leng="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MiViaje.com</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styleDestinos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="logo"><a title="logoInicio" href="Index.html">
+                    <img id="logo" src="Image/LogoBlanco.svg" alt="logoInicio"></a></h1>
+            <ul>
+                <li><a href="index.html">Home</li></a>
+                <li><a href="destinos.html" style="color:#E48D36">Destinos</li></a>
+                <li><a href="mireserva.html">MiReserva</li></a>
+                <li><a href="contactenos.html">Contactenos</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="box">
+            <section class="formulario">
+                <div class="cajaPrincipal">
+                    <div class="ciudad">
+                        <div class="imgCiudad">
+                            <img src="Image/VectoricoCiudad.svg">
+                        </div>
+                        <div class="datosCiudad">
+                            <p>Ciudad</p>
+                            <select class="select1" style="width: 147px;">
+                                <option value="opcion 1" selected>BARICHARA</option>
+                                <option value="opcion 3">BOGOTÁ</option>
+                                <option value="opcion 4">CALÍ</option>
+                                <option value="opcion 5">CARTAGENA</option>
+                                <option value="opcion 6">SAN ANDRES</option>
+                                <option value="opcion 7">SANTA MARTA</option>
+                                <option value="opcion 8">LETICIA</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="checkIn">
+                        <div class="imgCalendarioIN"><img src="Image/Vectorcalendario.svg"></div>
+                        <div class="datosCheckIN">
+                            <p>Check In</p>
+                            <input class="cajaIn" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
+                                style="width: 100px;" onkeydown="return false">
+                        </div>
+                    </div>
+                    <div class="checkOut">
+                        <div class="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></div>
+                        <div class="datosCheckOut">
+                            <p>Check Out</p>
+                            <input class="cajaOut" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
+                                style="width: 100px;" onkeydown="return false">
+                        </div>
+                    </div>
+                    <div class="huespedes">
+                        <div class="imgHuespedes"><img src="Image/icoHuesped.svg ">
+                        </div>
+                        <div class="datosHuespedes">
+                            <p>Huespedes</p>
+                            <select class="select2">
+                                <option value="opcion 1">1 Adulto</option>
+                                <option value="opcion 2" selected>2 Adultos</option>
+                                <option value="opcion 3">3 Adultos</option>
+                                <option value="opcion 4">4 Adultos</option>
+
+                            </select>
+                        </div>
+                        <img class="img3" src="Image/VectoricoCiudad.svg">
+                        <div>
+                            <select class="select3" style="width: 80px;">
+                                <option value="opcion 0">1 hab</option>
+                                <option value="opcion 1">2 hab</option>
+                                <option value="opcion 2">2 hab</option>
+                                <option value="opcion 3">3 hab</option>
+                                <option value="opcion 4">4 hab</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="buscar"> <a href="destinos.html">
+                            <div class="imgbuscar"><img src="Image/lupa.svg"></div>
+                    </div></a>
+                </div>
+                <!--   TAL VEZ SE INTEGRE...
+                        <div class="habitaciones" name="habitaciones" style="width: 5px;">
+                            <label>Habitaciones</label>
+                            <select class = "select4">
+                                <option value="opcion 1">1 Habitacion</option>
+                                <option value="opcion 2">2 Habitaciones</option>
+                                <option value="opcion 3">3 Habitaciones</option>
+                                <option value="opcion 4">4 Habitaciones</option> 
+                            </select>
+                        </div> -->
+            </section>
+
+        </div>
+
+
+        <section>
+            <div class="destinos">
+
+                <div class="destino1">
+                    <div class="cardD1"><a href="destino-reservado.html">
+                            <div class="card1">
+                                <img class="destinop1" src="Image/bogota.jpg">
+                            </div>
+                    </div></a>
+                    <div class="txtCard1">
+                        <h4><b>Bogotá</b></h4>
+                        <p>3 Hoteles con Desayuno Incluido</p><br>
+                        <p>Noche desde $50.000</p>
+                    </div>
+                </div>
+
+
+                <div class="destino2">
+                    <div class="cardD2"><a href="destino-reservado.html">
+                            <div class="card2">
+                                <img class="destinop2" src="Image/Cartagena.png">
+                            </div>
+
+                    </div></a>
+                    <div class="txtCard2">
+                        <h4><b>Cartagena</b></h4>
+                        <p>3 Hoteles Todo Incluido</p><br>
+                        <p>Noche desde $245.000</p>
+                    </div>
+                </div>
+
+
+                <div class="destino3">
+                    <div class="cardD3"><a href="destino-reservado.html">
+                            <div class="card3">
+                                <img class="destinop3-1" src="Image/medellin.webp">
+                            </div>
+
+                    </div></a>
+
+                    <div class="txtCard3">
+                        <h4><b>Medellín</b></h4>
+                        <p>5 Hoteles con Desayuno Incluido</p><br>
+                        <p>Noche desde $40.000</p>
+                    </div>
+
+                </div>
+        </section>
+
+
+        <section>
+            <div class="destinos2">
+
+                <div class="destino4">
+                    <div class="cardD1"><a href="destino-reservado.html">
+                            <div class="card1">
+                                <img class="destinop1" src="Image/SanAndres.webp">
+                            </div>
+                    </div></a>
+                    <div class="txtCard1">
+                        <h4><b>San Andres</b></h4>
+                        <p>5 Hoteles con Piscina</p><br>
+                        <p>Noche desde $65.000</p>
+                    </div>
+                </div>
+
+
+                <div class="destino5">
+                    <div class="cardD2"><a href="destino-reservado.html">
+                            <div class="card2">
+                                <img class="destinop2" src="Image/Cali.jpg">
+                            </div>
+
+                    </div></a>
+                    <div class="txtCard2">
+                        <h4><b>Calí</b></h4>
+                        <p>5 Hoteles con Desayuno Incluido</p><br>
+                        <p>Noche desde $35.000</p>
+                    </div>
+                </div>
+
+
+                <div class="destino6">
+                    <div class="cardD3"><a href="destino-reservado.html">
+                            <div class="card3">
+                                <img class="destinop3-1" src="Image/Santa Marta.jpeg">
+                            </div>
+
+                    </div></a>
+
+                    <div class="txtCard3">
+                        <h4><b>Santa Marta</b></h4>
+                        <p>5 Hoteles con Vista al Mar</p><br>
+                        <p>Noche desde $165.000</p>
+                    </div>
+
+                </div>
+        </section>
+
+        <section>
+            <div class="destinos3">
+
+                <div class="destino7">
+                    <div class="cardD1"><a href="destino-reservado.html">
+                            <div class="card1">
+                                <img class="destinop1" src="Image/Barichara.jpg">
+                            </div>
+                    </div></a>
+                    <div class="txtCard1">
+                        <h4><b>Barichara</b></h4>
+                        <p>4 Hoteles con Piscina</p><br>
+                        <p>Noche desde $200.000</p>
+                    </div>
+                </div>
+
+
+                <div class="destino8">
+                    <div class="cardD2"><a href="destino-reservado.html">
+                            <div class="card2">
+                                <img class="destinop2" src="Image/Leticia.jpeg">
+                            </div>
+
+                    </div></a>
+                    <div class="txtCard2">
+                        <h4><b>Leticia</b></h4>
+                        <p>3 Bungalows con Desayuno Incluido</p><br>
+                        <p>Noche desde $120.000</p>
+                    </div>
+                </div>
+
+
+                <div class="destino9">
+                    <div class="cardD8">
+                        <div class="destinop3">
+                            <span>MUY PRONTO <br>PODRÁS  VIAJAR <br>A MÁS </span><span style = "color: #E48D36;">DESTINOS</span><br><br>
+                            <p style="font-size: 12px; line-height: 15px;">SÍGUENOS EN REDES SOCIALES <br>PARA ENTERARTE DE NUESTROS NUEVOS DESTINOS</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <article>
+            <div class="nuevasAventuras">
+                <div><img class="bannerAventuras" src="Image/Valle.jpg"></div>
+                <div class="cardAventuras">
+                    <div class="grupoCard1">
+                        <div class="cardP1NA"><a href="index.html">
+                                <div class="card1NA">
+                                    <img class="destinop1" src="Image/Cabañas.jpg">
+                                </div>
+                        </div>
+                        <div class="btnAventuras2">
+                            <p class=txtbtn>CABAÑAS / SAN ANDRES
+                                <span style="font-weight:500; font-size:15px; letter-spacing: 0.4px;">DESDE
+                                    250.000</span>
+                            </p>
+                        </div></a>
+                    </div>
+                    <div class="grupoCard2">
+                        <div class="cardP2NA"><a href="index.html">
+                                <div class="card2NA">
+                                    <img class="destinop2" src="Image/Glamping.jpg">
+                                </div>
+                        </div>
+                        <div class="btnAventuras3">
+                            <p class=txtbtn>GLAMPING / BOGOTÁ
+                                <span style="font-weight:500; font-size:15px; letter-spacing: 0.4px;">DESDE
+                                    $150.000</span>
+                            </p>
+                        </div></a>
+                    </div>
+                    <div class="grupoCard3">
+                        <div class="cardP3NA"><a href="index.html">
+                                <div class="card3NA">
+                                    <img class="destinop3" src="Image/bungalows.jpg">
+                                </div>
+                        </div>
+                        <div class="btnAventuras4">
+                            <p class=txtbtn>BUGALOWS / CARTAGENA
+                                <span style="font-weight:500; font-size:15px; letter-spacing: 0.4px;">DESDE
+                                    550.000</span>
+                            </p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class="textAventuras">
+                <p><span class="txt1Aventuras">EXPLORA NUEVAS</span><br>
+                    <span class="txt2Aventuras">AVENTURAS</span>
+                </p>
+                <a href="destinos.html">
+                    <div class="btnAventuras">
+                        <p class=txtbtn>PRUEBA ALGO NUEVO</p>
+                    </div>
+
+                </a>
+            </div>
+
+        </article>
+
+
+    </main>
+    <footer>
+        <div class="conocenos">
+            <p>Conócenos</p>
+            <ul class="listaConocenos">
+                <li>¿Qué es MiViaje.com?</li>
+                <li>Privacidad</li>
+                <li>Términos</li>
+                <li> Mapa del sitio</li>
+                <li> Datos de la empresa</li>
+            </ul>
+
+        </div>
+        <div class="dudas">
+            <p>¿Dudas?<br>
+                Encuéntranos</p>
+            <ul class="listaDudas">
+                <li>Centro de ayuda</li>
+                <li>Reversión de Pagos</li>
+                <li>(xxx) xxx xxxx xx</li>
+                <li>info@miviaje.com</li>
+            </ul>
+
+        </div>
+
+        <h1 class=logoFooter><a title="logoFooter" href="Index.html">
+                <img id="logoFooter" src="Image/LogoBlanco.svg" alt="logoFooter"></a></h1>
+        <div class="redesSociales">
+
+            <img src="Image/Instagram.png" class="instagram">
+            <img src="Image/Facebook.png" class="facebook">
+            <img src="Image/Telegram.png" class="telegram">
+            <img src="Image/Twitter.png" class="twitter">
+
+
+        </div>
+        <p class="txtFinal">Copyright - Miviaje.com - 2022</p>
+
+
+    </footer>
+</body>
+
+</html>

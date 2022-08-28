@@ -1,0 +1,1215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  HEADER - MENU - BLANCO
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+header {
+    background: #ffffff;
+    padding: 0px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 0 10px 0;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 17px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+
+}
+
+.menu {
+    width: 100%;
+    /* DIMENSIONAR LOS PIXELES DE LAS PANTALLAS*/
+    position: relative;
+    margin: 0 auto;
+    /* AL CAMBIAR DE TAMAÑO DE PANTALLA ESTE SE REDIMENSIONA*/
+}
+
+.logo {
+    margin: 30px 0 0 80px;
+}
+
+nav {
+    position: absolute;
+    /* CREAR UNA POSICION APARTIR DE UN PUNTO*/
+    top: 10px;
+    right: 70px;
+}
+
+nav li {
+    display: inline;
+    /* AJUSTAR LATERALMENTE EL MENU*/
+}
+
+nav a {
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 0 0 15px;
+    /* ESPACIAMIENTO INTERNO (ARRIBA ABAJO DERECHA IZQUIERDA) */
+}
+
+nav a:hover {
+    color: #E48D36;
+    transition: 0.5s;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  CARDS - BANNER
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* ------------BANNER-------------*/
+
+.container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 20px 0 0 0px;
+    z-index: 1;
+}
+
+.banner {
+    width: 100%;
+    margin-top: -150px;
+    z-index: -2;
+}
+
+.txtBanner2 a {
+    text-decoration: none;
+    color: #023F76;
+}
+
+.txtBanner {
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #023F76;
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    letter-spacing: -2px;
+    text-shadow: 10px 10px 40px #ffffff;
+}
+
+.txtBanner2 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 250px;
+    left: 90px;
+    text-shadow: 10px 10px 40px #ffffff;
+}
+
+.txtBanner2:hover {
+    transform: scale(1.03);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+
+/*-------------CARDS------------*/
+
+.cardP1 a {
+    text-decoration: none;
+}
+
+.cardP1 {
+    background: rgba(255, 255, 255, 0.6);
+    width: 170PX;
+    height: 230px;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    /* position: relative;
+    margin: -380px 0 0 60px; */
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.card1 {
+    width: 151PX;
+    height: 160px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px 10px 4px 4px;
+}
+
+.destinop1 {
+    width: 200%;
+    margin-left: -30px;
+}
+
+.txtCard1 b {
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #023F76;
+    font-size: 15px;
+}
+
+.txtCard1 p {
+    color: #023F76;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px
+}
+
+.cardP2 a {
+    text-decoration: none;
+}
+
+.cardP2 {
+    background: rgba(255, 255, 255, 0.6);
+    width: 170PX;
+    height: 230px;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+    left: 270px;
+    /* position: relative;
+    margin: -380px 0 0 60px; */
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.card2 {
+    width: 150PX;
+    height: 160px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px 10px 4px 4px;
+}
+
+.destinop2 {
+    width: 200%;
+    margin-left: -140px;
+}
+
+.cardP3 a {
+    text-decoration: none;
+}
+
+.cardP3 {
+    background: rgba(255, 255, 255, 0.6);
+    width: 170PX;
+    height: 230px;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+    left: 460px;
+    /* position: relative;
+    margin: -380px 0 0 60px; */
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.card3 {
+    width: 151PX;
+    height: 160px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px 10px 4px 4px;
+}
+
+.destinop3 {
+    width: 200%;
+    margin-left: -30px;
+}
+
+
+/*
+//// HOVER CARDS -------------------------------
+*/
+.cardP1:hover {
+    transform: scale(1.03);
+    transition: 0.5s all;
+}
+
+.cardP2:hover {
+    transform: scale(1.03);
+    transition: 0.5s all;
+}
+
+.cardP3:hover {
+    transform: scale(1.03);
+    transition: 0.5s all;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  CAJA FORMULARIO RESERVA
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.formulario {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.cajaPrincipal {
+    background-color: rgb(255, 255, 255);
+    width: 850px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: -50px auto;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+}
+
+/*:::::::::::::::::::::::::::::::::
+/*::::::::::: CIUDAD ::::::::::::
+::::::::::::::::::::::::::::::::::::*/
+.cajaPrincipal .ciudad {
+    background-color: #F9F7F7;
+    width: 190px;
+    height: 60px;
+    border-radius: 10px 0 0 10px;
+    margin: 20px 4px 0 5px;
+
+}
+
+.ciudad .imgCiudad {
+    float: left;
+    margin: 20px 0 0 20px;
+
+}
+
+.ciudad .datosCiudad {
+
+    margin: 15px 0 0 60px;
+
+}
+
+.datosCiudad p {
+    font-size: 13px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #023F76;
+    margin: 0 0 0 auto;
+}
+
+.datosCiudad select {
+    scale: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+/*:::::::::::::::::::::::::::::::::
+/*::::::::::: CHECK IN ::::::::::::
+::::::::::::::::::::::::::::::::::::*/
+
+.cajaPrincipal .checkIn {
+    background-color: #F9F7F7;
+    width: 165px;
+    height: 60px;
+    margin-right: 4px;
+    margin-top: 20px;
+}
+
+.checkIn .imgCalendarioIN {
+    float: left;
+    margin: 20px 0 0 15px;
+}
+
+.checkIn .datosCheckIN {
+
+    float: left;
+    justify-content: right;
+    margin: 15px 0 0 15px;
+}
+
+.datosCheckIN p {
+    font-size: 13px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #023F76;
+}
+
+.datosCheckIN .cajaIn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #023F76;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: -3px;
+    margin-top: 3px;
+}
+
+
+
+/*:::::::::: CHECK OUT :::::::::::*/
+.cajaPrincipal .checkOut {
+    background-color: #F9F7F7;
+    width: 165px;
+    height: 60px;
+    margin-right: 4px;
+    margin-top: 20px;
+}
+
+.checkOut .imgCalendarioOut {
+    float: left;
+    margin: 20px 0 0 15px;
+}
+
+.checkOut .datosCheckOut {
+    float: left;
+    justify-content: right;
+    margin: 15px 0 0 15px;
+}
+
+.datosCheckOut p {
+    font-size: 13px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #023F76;
+}
+
+.datosCheckOut .cajaOut {
+
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #023F76;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: -3px;
+    margin-top: 3px;
+}
+
+
+
+
+/*:::::::::: HUESPEDES :::::::::::*/
+.cajaPrincipal .huespedes {
+    background-color: #F9F7F7;
+    width: 210px;
+    height: 60px;
+    margin-right: 4px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 20px;
+}
+
+.huespedes .imgHuespedes {
+    scale: 120%;
+    float: left;
+    margin: 20px 0 0 20px;
+}
+
+
+
+.huespedes .datosHuespedes {
+    float: left;
+    justify-content: right;
+    margin: 15px 0 0 15px;
+}
+
+.datosHuespedes p {
+    font-size: 13px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #023F76;
+}
+
+.select2 {
+
+    scale: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 3px 1em 0 0;
+    margin: 0;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+}
+
+.img3 {
+    scale: 60%;
+    float: left;
+    margin: -24px 0 0 120px;
+}
+
+.select3 {
+
+    float: left;
+    scale: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    margin: -20px 0 0 145px;
+
+}
+
+
+
+
+/*:::::::::: BUSCAR :::::::::::*/
+.buscar {
+    scale: 100%;
+    background: #E48D36;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-left: 1px;
+    cursor: pointer;
+
+}
+
+.buscar .imgbuscar {
+    scale: 50%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.buscar:hover {
+    scale: 1.01;
+    transition: 0.2s all;
+}
+
+
+/*--------HABITACIONES-----------*/
+
+.select4 {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    margin: -56px 0 0 670px;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    line-height: inherit;
+    outline: none;
+    /* BORDE DE SELCCION*/
+    padding: 5px;
+}
+
+
+.habitaciones label {
+    position: relative;
+    top: -55px;
+    left: 610px;
+    font-size: 13px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  RECOMENDADO DEL DIA
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.recoDia {
+    display: block;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.check {
+    width: 9%;
+    position: absolute;
+    margin: 35px 0 0 -10px;
+}
+
+.check2 {
+    width: 9%;
+    position: absolute;
+    margin: 100px 0 0 -10px;
+}
+
+.cajaDia {
+    background: #ffffff;
+    width: 378px;
+    height: 358px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 20px 20px;
+    display: inline-block;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    top: 60px;
+    left: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cajaDia:hover {
+    transform: scale(1.02);
+    transition: 0.5s all;
+}
+
+.estrellas {
+    text-align: left;
+}
+
+.cajaDia img {
+    width: 100%
+}
+
+.txtRD2 {
+    text-align: left;
+    font-size: 70px;
+}
+
+.txtRD {
+    text-align: left;
+    letter-spacing: -0.3px;
+}
+
+.cajaText {
+    scale: 85%;
+    font-size: 30px;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.recoDia .desc {
+    text-align: left;
+}
+
+.desc .text1 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.desc .text2 {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0 0 0 30px;
+
+}
+
+.desc .text3 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: 0 0 0 30px;
+}
+
+.desc .text4 {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0 0 0 30px;
+}
+
+.desc .text5 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: 0 0 0 30px;
+}
+
+.desc .text6 {
+    margin: 30px 0 0 0;
+    letter-spacing: -2px;
+}
+
+.btnRecomendadoDia {
+    background: #E48D36;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    margin: -50px 0 0 220px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btnRecomendadoDia .txtbtn {
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.btnRecomendadoDia:hover {
+    transform: scale(1.04);
+    transition: 0.5s all;
+}
+
+.cajaText a {
+    text-decoration: none;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  NUEVAS AVENTURAS
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.nuevasAventuras {
+    background-color: #ffffff;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin-top: 100px;
+    width: 100%;
+    height: 420px;
+}
+
+.bannerAventuras {
+    width: 150%;
+    margin: -470px 0 0 0;
+    opacity: 25%;
+}
+
+
+/* ------------TEXTO--------------*/
+.textAventuras {
+    scale: 90%;
+    display: block;
+    position: absolute;
+    top: 1300px;
+    left: 130px;
+}
+
+.textAventuras .txt1Aventuras {
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-left: 35px;
+    color: #023F76;
+}
+
+.textAventuras .txt2Aventuras {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: right;
+    color: #E48D36;
+}
+
+
+
+/* ------------BOTONES--------------*/
+.btnAventuras {
+    background: #E48D36;
+    width: 200px;
+    height: 50px;
+    margin: 20px 0 0 60px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btnAventuras .txtbtn {
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.btnAventuras:hover {
+    transform: scale(1.04);
+    transition: 0.5s all;
+}
+
+.textAventuras a {
+    text-decoration: none;
+}
+
+.btnAventuras2 {
+    background: #023F76;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin: 580px 0 0 90px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btnAventuras2 .txtbtn {
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 15px;
+}
+
+.grupoCard1:hover {
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.btnAventuras3 {
+    background: #023F76;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin: 610px 0 0 340px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btnAventuras3 .txtbtn {
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 15px;
+}
+
+.grupoCard2:hover {
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.btnAventuras4 {
+    background: #023F76;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin: 560px 0 0 589px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btnAventuras4 .txtbtn {
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 15px;
+}
+
+.grupoCard3:hover {
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+
+
+
+/* ------------CARDS--------------*/
+.cardAventuras {
+    display: block;
+    position: absolute;
+    top: 880px;
+    left: 400px;
+}
+
+.cardAventuras .cardP1NA {
+    background: rgba(255, 255, 255, 0.6);
+    width: 210PX;
+    height: 260px;
+    overflow: hidden;
+    position: absolute;
+    top: 350px;
+    left: 40px;
+    /* position: relative;
+    margin: -380px 0 0 60px; */
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.cardAventuras .card1NA {
+    width: 110%;
+    height: 110%;
+    overflow: hidden;
+    margin: -10px;
+    border-radius: 10px 10px 4px 4px;
+}
+
+.cardAventuras .destinop1 {
+    width: 200%;
+}
+
+.cardAventuras .cardP2NA {
+    background: rgba(255, 255, 255, 0.6);
+    width: 210PX;
+    height: 260px;
+    overflow: hidden;
+    position: absolute;
+    top: 380px;
+    left: 290px;
+    /* position: relative;
+    margin: -380px 0 0 60px; */
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.cardAventuras .card2NA {
+    width: 120%;
+    height: 110%;
+    overflow: hidden;
+    margin-left: -40px;
+    margin-top: -20px;
+    border-radius: 10px 10px 4px 4px;
+}
+
+.cardAventuras .destinop2 {
+    width: 160%;
+    margin: 20px 0px 0 -50px;
+}
+
+.cardAventuras .cardP3NA {
+    background: rgba(255, 255, 255, 0.6);
+    width: 210PX;
+    height: 260px;
+    overflow: hidden;
+    position: absolute;
+    top: 330px;
+    left: 540px;
+    /* position: relative;
+    margin: -380px 0 0 60px; */
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.cardAventuras .card3NA {
+    width: 120%;
+    height: 110%;
+    overflow: hidden;
+    margin-left: -40px;
+    margin-top: -20px;
+    border-radius: 10px 10px 4px 4px;
+}
+
+.cardAventuras .destinop3 {
+    width: 160%;
+    margin: 20px 0px 0 -50px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  APP
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.App {
+    width: 100%;
+    display: block;
+    background: transparent;
+    width: 100%;
+    height: 730px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.App .fondoApp {
+    position: absolute;
+    width: 110%;
+    margin: -50px 0 0 -700px;
+}
+
+.cajaApp {
+    background: transparent;
+    width: 100%;
+    height: 730px;
+    display: inline-block;
+    margin-top: auto;
+    margin-left: auto;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.cajaApp .mockup {
+    position: absolute;
+    width: 536px;
+    height: 632px;
+    margin: 80px 0 0 -60px;
+
+}
+
+.cajaApp .mockup:hover {
+    transform: scale(1.01);
+    transition: 0.2s all;
+}
+
+.cajaApp .btnStore {
+    position: absolute;
+    width: 220px;
+    height: 160px;
+    margin: 380px 0 0 -370px;
+
+}
+
+.cajaApp .cajaTxtApp {
+    position: absolute;
+    display: inline-table;
+    width: 100%;
+    margin: 0 0 0 -655px;
+
+}
+
+.cajaTxtApp .textApp {
+    position: absolute;
+    margin: 140px 0 0 250px;
+}
+
+.textApp .txtApp1 {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #023F76;
+
+}
+
+.textApp .txtApp1 .txtApp1-1 {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #E48D36;
+}
+
+.textApp2 .txtApp2 {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #023F76;
+}
+
+.textApp2 .txtApp3 {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #023F76;
+}
+
+.textApp2 .txtApp3 .txtApp1-2 {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #E48D36;
+}
+
+.textApp2 .txtApp4 {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #023F76;
+}
+
+.textApp2 .txtApp5 {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #023F76;
+    position: absolute;
+    margin: 30px 0 0 -85px;
+}
+
+.textApp2 {
+    position: absolute;
+    margin: 240px 0 0 210px;
+
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  FOOTER
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+footer {
+    background-color: #023F76;
+    width: 100%;
+    height: 260px;
+}
+
+.logoFooter {
+
+    text-align: center;
+    padding-top: 120px;
+}
+
+.redesSociales {
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redesSociales img {
+    width: 1.5%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.txtFinal {
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: 20px 0 0 -30px;
+}
+
+.redesSociales .facebook:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.3s all;
+}
+
+.redesSociales .twitter:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.3s all;
+}
+
+.redesSociales .instagram:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.3s all;
+}
+
+.redesSociales .telegram:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.3s all;
+}
+
+.conocenos {
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.conocenos p {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.conocenos .listaConocenos {
+    font-size: 13px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.dudas {
+    float: right;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.dudas p {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.dudas .listaDudas {
+    font-size: 13px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  QUERIES
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 1034px) {
+    .txtBanner {
+        margin-top: -60px;
+    }
+
+    .txtBanner2 {
+        margin-top: -60px;
+    }
+
+    .cardP1 {
+        position: absolute;
+        top: 240px;
+    }
+
+    .cardP2 {
+        position: absolute;
+        top: 240px;
+    }
+
+    .cardP3 {
+        position: absolute;
+        top: 240px;
+    }
+    
+    .formulario {
+        position: relative;
+        margin: -120px 0 0 0;
+    }
+
+    .nuevasAventuras .cardAventuras {
+        margin: -60px 0 0 0px;
+    }
+
+    .textAventuras {
+        margin: -50px 0 0 0px;
+    }
+
+    .nuevasAventuras .grupoCard3 {
+        display: none;
+    }
+
+    .App .fondoApp {
+
+        margin-left: -500px;
+    }
+
+    .App {
+        height: 700px;
+    }
+
+}
+@media screen and (max-width: 940px) {
+}
