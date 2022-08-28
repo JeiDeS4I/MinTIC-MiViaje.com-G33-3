@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+.cajaPrincipal{
+    background-color: rgb(255, 255, 255);
+    width: 850px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    border-radius: 25px 25px 25px 25px ;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+/*:::::::::: CIUDAD :::::::::::*/
+.cajaPrincipal .ciudad{
+    background-color: #F9F7F7;
+    width: 190px;
+    height: 60px;
+    border-radius: 10px 0 0 10px;
+    margin: 20px 4px 0 5px;
+}
+
+.ciudad .imgCiudad{
+    float: left;
+    margin: 20px 0 0 20px ;
+    
+}
+
+.ciudad .datosCiudad {
+    justify-content: right;
+    margin: 15px 0 0 60px;
+    
+}
+.datosCiudad p{
+    font-size: 13px;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    color: #023F76;
+    padding-top: 4px;
+
+}
+
+.datosCiudad select{
+    scale: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+
+/*:::::::::: CHECK IN :::::::::::*/
+.cajaPrincipal .checkIn{
+    background-color: #F9F7F7;
+    width: 165px;
+    height: 60px;
+    margin-right: 4px;
+    margin-top: 20px; 
+}
+.checkIn .imgCalendarioIN{
+    float: left;
+    margin: 20px 0 0 15px ; 
+}
+
+.checkIn .datosCheckIN {
+    
+    float: left;
+    justify-content: right;
+    margin: 15px 0 0 15px; 
+}
+.datosCheckIN p{
+    font-size: 13px;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    color: #023F76;
+}
+.datosCheckIN .cajaIn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    color: #023F76;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: -3px;
+    margin-top: 3px;
+}
+
+
+
+/*:::::::::: CHECK OUT :::::::::::*/
+.cajaPrincipal .checkOut{
+    background-color: #F9F7F7;
+    width: 165px;
+    height: 60px;
+    margin-right: 4px;
+    margin-top: 20px; 
+}
+.checkOut .imgCalendarioOut{
+    float: left;
+    margin: 20px 0 0 15px ; 
+}
+
+.checkOut .datosCheckOut { 
+    float: left;
+    justify-content: right;
+    margin: 15px 0 0 15px; 
+}
+
+.datosCheckOut p{
+    font-size: 13px;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    color: #023F76;
+}
+
+.datosCheckOut .cajaOut {
+    
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    color: #023F76;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: -3px;
+    margin-top: 3px;
+}
+
+
+
+
+/*:::::::::: HUESPEDES :::::::::::*/
+.cajaPrincipal .huespedes{
+    background-color: #F9F7F7;
+    width: 210px;
+    height: 60px;
+    margin-right: 4px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 20px; 
+}
+
+.huespedes .imgHuespedes {
+    scale: 120%;
+    float: left;
+    margin: 20px 0 0 20px ;
+}
+
+
+
+.huespedes .datosHuespedes {
+    float: left;
+    justify-content: right;
+    margin: 15px 0 0 15px; 
+}
+.datosHuespedes p{
+    font-size: 13px;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    color: #023F76;
+}
+
+.select2 {
+    
+    scale: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 3px 1em 0 0;
+    margin: 0;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.img3{
+    scale: 60%;
+    float:left;
+    margin: -24px 0 0 120px;
+}
+
+.select3 {
+
+    float: left;
+    scale: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    margin: -20px 0 0 145px;
+    
+}
+
+
+
+
+/*:::::::::: BUSCAR :::::::::::*/
+.buscar{
+    scale: 100%;
+    background: #E48D36;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 20px; 
+    margin-left: 1px;
+    cursor: pointer;
+    
+}
+
+.buscar .imgbuscar{
+    scale: 50%;
+    padding: 4px;
+    cursor: pointer;
+}
+.buscar:hover {
+    scale: 1.01;
+    transition: 0.2s all;
+}
