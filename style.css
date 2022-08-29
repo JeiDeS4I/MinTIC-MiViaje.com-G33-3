@@ -5,6 +5,7 @@
 //  HEADER - MENU - BLANCO
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+
 header {
     background: #ffffff;
     padding: 0px 0;
@@ -60,9 +61,10 @@ nav a:hover {
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  CARDS - BANNER
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* ------------BANNER-------------*/
+/* :::::::::::::: BANNER ::::::::::::::*/
 
 .container {
+    
     width: 100%;
     height: 600px;
     overflow: hidden;
@@ -110,7 +112,7 @@ nav a:hover {
 }
 
 
-/*-------------CARDS------------*/
+/*::::::::: CARDS :::::::::*/
 
 .cardP1 a {
     text-decoration: none;
@@ -223,9 +225,7 @@ nav a:hover {
 }
 
 
-/*
-//// HOVER CARDS -------------------------------
-*/
+/*::::::::: HOVER CARDS :::::::::::*/
 .cardP1:hover {
     transform: scale(1.03);
     transition: 0.5s all;
@@ -244,60 +244,52 @@ nav a:hover {
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  CAJA FORMULARIO RESERVA
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
-.formulario {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+.formulario{
+    margin-top: -150px;
+    margin-bottom: -90px;
+    position: relative;
 }
-
-.cajaPrincipal {
+.cajaPrincipal{
     background-color: rgb(255, 255, 255);
     width: 850px;
     height: 100px;
     display: flex;
     justify-content: center;
-    margin: -50px auto;
-    border-radius: 15px 15px 15px 15px;
+    margin: 100px auto;
+    border-radius: 25px 25px 25px 25px ;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-
 }
-
-/*:::::::::::::::::::::::::::::::::
-/*::::::::::: CIUDAD ::::::::::::
-::::::::::::::::::::::::::::::::::::*/
-.cajaPrincipal .ciudad {
+/*:::::::::: CIUDAD :::::::::::*/
+.cajaPrincipal .ciudad{
     background-color: #F9F7F7;
     width: 190px;
     height: 60px;
     border-radius: 10px 0 0 10px;
     margin: 20px 4px 0 5px;
-
 }
 
-.ciudad .imgCiudad {
+.ciudad .imgCiudad{
     float: left;
-    margin: 20px 0 0 20px;
-
+    margin: 20px 0 0 20px ;
+    
 }
 
 .ciudad .datosCiudad {
-
+    justify-content: right;
     margin: 15px 0 0 60px;
-
+    
 }
-
-.datosCiudad p {
+.datosCiudad p{
     font-size: 13px;
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
     color: #023F76;
-    margin: 0 0 0 auto;
+    padding-top: 4px;
+
 }
 
-.datosCiudad select {
+.datosCiudad select{
     scale: 100%;
     appearance: none;
     background-color: transparent;
@@ -307,50 +299,45 @@ nav a:hover {
     width: 100%;
     color: #023F76;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight:600;
     font-size: 14px;
     cursor: pointer;
     outline: none;
 
 }
 
-/*:::::::::::::::::::::::::::::::::
-/*::::::::::: CHECK IN ::::::::::::
-::::::::::::::::::::::::::::::::::::*/
 
-.cajaPrincipal .checkIn {
+/*:::::::::: CHECK IN :::::::::::*/
+.cajaPrincipal .checkIn{
     background-color: #F9F7F7;
     width: 165px;
     height: 60px;
     margin-right: 4px;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
-
-.checkIn .imgCalendarioIN {
+.checkIn .imgCalendarioIN{
     float: left;
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 15px ; 
 }
 
 .checkIn .datosCheckIN {
-
+    
     float: left;
     justify-content: right;
-    margin: 15px 0 0 15px;
+    margin: 15px 0 0 15px; 
 }
-
-.datosCheckIN p {
+.datosCheckIN p{
     font-size: 13px;
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
     color: #023F76;
 }
-
 .datosCheckIN .cajaIn {
     border: none;
     background-color: transparent;
     position: absolute;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight:600;
     color: #023F76;
     font-size: 13px;
     text-decoration: none;
@@ -362,39 +349,38 @@ nav a:hover {
 
 
 /*:::::::::: CHECK OUT :::::::::::*/
-.cajaPrincipal .checkOut {
+.cajaPrincipal .checkOut{
     background-color: #F9F7F7;
     width: 165px;
     height: 60px;
     margin-right: 4px;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
-
-.checkOut .imgCalendarioOut {
+.checkOut .imgCalendarioOut{
     float: left;
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 15px ; 
 }
 
-.checkOut .datosCheckOut {
+.checkOut .datosCheckOut { 
     float: left;
     justify-content: right;
-    margin: 15px 0 0 15px;
+    margin: 15px 0 0 15px; 
 }
 
-.datosCheckOut p {
+.datosCheckOut p{
     font-size: 13px;
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
     color: #023F76;
 }
 
 .datosCheckOut .cajaOut {
-
+    
     border: none;
     background-color: transparent;
     position: absolute;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight:600;
     color: #023F76;
     font-size: 13px;
     text-decoration: none;
@@ -407,19 +393,19 @@ nav a:hover {
 
 
 /*:::::::::: HUESPEDES :::::::::::*/
-.cajaPrincipal .huespedes {
+.cajaPrincipal .huespedes{
     background-color: #F9F7F7;
     width: 210px;
     height: 60px;
     margin-right: 4px;
     border-radius: 0 10px 10px 0;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 .huespedes .imgHuespedes {
     scale: 120%;
     float: left;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 20px ;
 }
 
 
@@ -427,18 +413,17 @@ nav a:hover {
 .huespedes .datosHuespedes {
     float: left;
     justify-content: right;
-    margin: 15px 0 0 15px;
+    margin: 15px 0 0 15px; 
 }
-
-.datosHuespedes p {
+.datosHuespedes p{
     font-size: 13px;
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
     color: #023F76;
 }
 
 .select2 {
-
+    
     scale: 100%;
     appearance: none;
     background-color: transparent;
@@ -448,15 +433,16 @@ nav a:hover {
     width: 100%;
     color: #023F76;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight:600;
     font-size: 13px;
     cursor: pointer;
     outline: none;
+
 }
 
-.img3 {
+.img3{
     scale: 60%;
-    float: left;
+    float:left;
     margin: -24px 0 0 120px;
 }
 
@@ -472,36 +458,35 @@ nav a:hover {
     width: 100%;
     color: #023F76;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight:600;
     font-size: 13px;
     cursor: pointer;
     outline: none;
     margin: -20px 0 0 145px;
-
+    
 }
 
 
 
 
 /*:::::::::: BUSCAR :::::::::::*/
-.buscar {
+.buscar{
     scale: 100%;
     background: #E48D36;
     width: 60px;
     height: 60px;
     border-radius: 10px 10px 10px 10px;
-    margin-top: 20px;
+    margin-top: 20px; 
     margin-left: 1px;
     cursor: pointer;
-
+    
 }
 
-.buscar .imgbuscar {
+.buscar .imgbuscar{
     scale: 50%;
     padding: 4px;
     cursor: pointer;
 }
-
 .buscar:hover {
     scale: 1.01;
     transition: 0.2s all;
@@ -1111,7 +1096,7 @@ footer {
 
 .conocenos {
     float: left;
-    margin-top: 50px;
+    margin-top: 55px;
     margin-left: 100px;
     text-align: center;
 }
@@ -1160,7 +1145,7 @@ footer {
 //  QUERIES
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1200px) {
     .txtBanner {
         margin-top: -60px;
     }
@@ -1185,16 +1170,15 @@ footer {
     }
     
     .formulario {
-        position: relative;
-        margin: -120px 0 0 0;
+        margin-top: -220px;
     }
 
     .nuevasAventuras .cardAventuras {
-        margin: -60px 0 0 0px;
+        margin: -80px 0 0 -20px;
     }
 
     .textAventuras {
-        margin: -50px 0 0 0px;
+        margin: -90px 0 0 -20px;
     }
 
     .nuevasAventuras .grupoCard3 {
@@ -1211,5 +1195,97 @@ footer {
     }
 
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 992px) {
+    .txtBanner {
+        margin: -60px 0 0 40px;
+    }
+    .txtBanner2 {
+        margin: -60px 0 0 200px;
+    }
+    .banner{
+        height: 720px;
+    }
+    .cardP1 {
+        position: absolute;
+        top: 240px;
+        left: 100px;
+    }
+
+    .cardP2 {
+        position: absolute;
+        top: 240px;
+        left: 300px;
+    }
+
+    .cardP3 {
+        position: absolute;
+        top: 240px;
+        left: 500px;
+    }
+    .formulario {
+        position: relative;
+        top: 10px;
+    }
+    .cajaDia{
+        width: 500px;
+        height: 190px;
+ 
+    }
+    .cajaDia img{
+        margin: -250px 0 0 0;
+    }
+    .cajaText {
+        margin: 60px 0 0 0;
+    }
+    .nuevasAventuras {
+        
+        width: 100%;
+        height: 400px;
+    }
+    
+    .bannerAventuras {
+        height: 900px;
+    }
+    .cardAventuras {
+        top:1100px;
+        left: 250px;
+    }
+    .textAventuras {
+        
+        margin: 150px auto auto -112px;
+    }
+
+    .textAventuras .txt1Aventuras {
+        font-size: 23px;
+    }
+    .textAventuras .txt2Aventuras {
+        font-size: 38px;
+    }
+    .btnAventuras {
+        margin-left: 20px;
+    }
+    .App{ 
+        height: 540px;
+
+    }
+    .App .fondoApp {
+        width: 200%;
+    }
+    .cajaApp .mockup {
+        width: 336px;
+        height: 432px;
+        margin: 100px 0 0 0px;
+    
+    }
+    .cajaTxtApp  {
+        top: -50px;
+        left: 480px;
+    }
+
+    .App .btnStore {
+        left: 480px;
+        top: -20px;
+    }
+
+
 }
