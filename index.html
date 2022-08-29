@@ -3,8 +3,9 @@
 <html leng="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
     <title>MiViaje.com</title>
+    <link rel="shortcut icon" href="Image/favicon.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,64 +15,65 @@
 
 <body>
     <header>
-        <div class = "menu">
-            <h1 class = "logo"><a title="logoInicio" href="Index.html">
-                    <img id="logo" src="Image/logo.svg" alt="logoInicio"></a></h1>
+        <div class="menu">
+            <h1 class="logo"><a title="logoInicio" href="Index.html">
+                    <img id="logo" src="Image/logoNaranja.svg" alt="logoInicio"></a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html" style="color:#E48D36">Home</li></a>
                     <li><a href="destinos.html">Destinos</li></a>
-                    <li><a href="mireserva.html">MiReserva</li></a>
-                    <li><a href="contactenos.html">Contactenos</li></a>
+                    <li><a href="404.html">MiReserva</li></a>
+                    <li><a href="404.html">Contactenos</li></a>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div>
-            
+
         </div>
         <p class="txtBanner">VIAJA, VIVE, EXISTE</p>
         <p class="txtBanner2"><a href="destinos.html">Destinos Populares</p></a>
-        
+
         <div class="cardpos">
-            <div class="cardP1"><a href="index.html">
-                    <div class="card1">
+            <section class="cardP1"><a href="index.html">
+                    <section class="card1">
                         <img class="destinop1" src="Image/bogota.jpg">
-                    </div>
+                    </section>
                     <div class="txtCard1">
                         <h4><b>Viaja a Bogotá</b></h4>
                         <p>Desde $50.000 la noche</p>
                     </div>
-            </div></a>
-            <div class="cardP2"><a href="index.html">
-                    <div class="card2">
-                        <img class="destinop2" src="Image/medellin.webp">
-                    </div>
-                    <div class="txtCard1">
+            </section></a>
+            <section class="cardP2"><a href="index.html">
+                    <section class="card2">
+                        <img class="destinop2" src="Image/medellin.jpg">
+                    </section>
+                    <section class="txtCard1">
                         <h4><b>Viaja a Medellin</b></h4>
                         <p>Desde $42.000 la noche</p>
-                    </div>
-            </div></a>
-            <div class="cardP3"><a href="index.html">
-                    <div class="card3">
+                    </section>
+            </section></a>
+            <section class="cardP3"><a href="index.html">
+                    <section class="card3">
                         <img class="destinop3" src="Image/Cartagena.png">
-                    </div>
-                    <div class="txtCard1">
+                    </section>
+                    <section class="txtCard1">
                         <h4><b>Viaja a Cartagena</b></h4>
                         <p>Desde $20.000 la noche</p>
-                    </div>
-            </div></a>
-            <div class="container">
+                    </section>
+            </section></a>
+            <section class="container">
                 <img class="banner" src="Image/Banner1.jpg">
-            </div>
+            </section>
         </div>
-        <section class="formulario">
-            <div class="cajaPrincipal">
-                <div class = "ciudad">
-                    <div class ="imgCiudad" >
-                        <img src="Image/VectoricoCiudad.svg"></div>
-                    <div class ="datosCiudad">
+        <form class="formulario">
+            <section class="cajaPrincipal">
+                <section class="ciudad">
+                    <section class="imgCiudad">
+                        <img src="Image/VectoricoCiudad.svg">
+                    </section>
+                    <section class="datosCiudad">
                         <p>Ciudad</p>
                         <select class="select1" style="width: 147px;">
                             <option value="opcion 1">BARICHARA</option>
@@ -83,54 +85,57 @@
                             <option value="opcion 7">SANTA MARTA</option>
                             <option value="opcion 8">LETICIA</option>
                         </select>
-                    </div>
+                    </section>
 
-                </div>
-                <div class = "checkIn">
-                    <div class ="imgCalendarioIN" ><img src="Image/Vectorcalendario.svg"></div>
-                    <div class ="datosCheckIN">
+                </section>
+                <div class="checkIn">
+                    <section class="imgCalendarioIN"><img src="Image/Vectorcalendario.svg"></section>
+                    <section class="datosCheckIN">
                         <p>Check In</p>
-                        <input class="cajaIn" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
-                        style="width: 100px;" onkeydown="return false">
-                    </div>
+                        <input class="cajaIn" type="date" max="2023-05-01" 
+                            style="width: 100px;" onkeydown="return false">
+                    </section>
                 </div>
-                <div class = "checkOut">
-                    <div class ="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></div>
-                    <div class ="datosCheckOut">
+                <div class="checkOut">
+                    <section class="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></section>
+                    <section class="datosCheckOut" >
                         <p>Check Out</p>
-                        <input class="cajaOut" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
-                            style="width: 100px;" onkeydown="return false">    
-                    </div>
+                        <input class="cajaOut" type="date"  max="2023-05-01" 
+                            style="width: 100px;" onkeydown="return false">
+                    </section>
                 </div>
-                <div class = "huespedes">
-                    <div class ="imgHuespedes"><img src="Image/icoHuesped.svg ">
-                        </div>
-                    <div class ="datosHuespedes">
+                <div class="huespedes">
+                    <section class="imgHuespedes"><img src="Image/icoHuesped.svg ">
+                    </section>
+                    <section class="datosHuespedes">
                         <p>Huespedes</p>
                         <select class="select2">
                             <option value="opcion 1">1 Adulto</option>
                             <option value="opcion 2" selected>2 Adultos</option>
                             <option value="opcion 3">3 Adultos</option>
                             <option value="opcion 4">4 Adultos</option>
+                            <option value="opcion 5">5 Adultos</option>
+                            <option value="opcion 6">6 Adultos</option>
+                            <option value="opcion 7">7 Adultos</option>
 
                         </select>
-                    </div> 
-                    <img class="img3" src="Image/VectoricoCiudad.svg">
-                        <div>
-                            <select class="select3" style="width: 80px;">
-                                <option value="opcion 0">1 hab</option>
-                                <option value="opcion 1">2 hab</option>
-                                <option value="opcion 2">2 hab</option>
-                                <option value="opcion 3">3 hab</option>
-                                <option value="opcion 4">4 hab</option>
-                            </select>
-                        </div>
+                    </section>
+
+                    <section>
+                        <img class="img3H" src="Image/VectoricoCiudad.svg">
+                        <select class="select3" style="width: 80px;">
+                            <option value="opcion 0">1 hab</option>
+                            <option value="opcion 1">2 hab</option>
+                            <option value="opcion 2">3 hab</option>
+                            <option value="opcion 3">4 hab</option>
+                        </select>
+                    </section>
                 </div>
-                <div class = "buscar">   <a href="destinos.html">
-                     <div class="imgbuscar"><img src="Image/lupa.svg"></div>  
+                <div class="buscar"> <a href="destinos.html">
+                        <div class="imgbuscar"><img src="Image/lupa.svg"></div>
                 </div></a>
-            </div>
-             <!--   TAL VEZ SE INTEGRE...
+            </section>
+            <!--   TAL VEZ SE INTEGRE...
                     <div class="habitaciones" name="habitaciones" style="width: 5px;">
                         <label>Habitaciones</label>
                         <select class = "select4">
@@ -140,26 +145,26 @@
                             <option value="opcion 4">4 Habitaciones</option> 
                         </select>
                     </div> -->
-        </section>
+        </form>
 
-               
-    
-        <section class="recoDia">
+
+        <div class="recoDia">
             <div class="cajaDia">
                 <img src="Image/Barichara.jpg">
             </div>
+
             <div class="cajaText">
                 <p class="txtRD">RECOMENDADO DEL DIA</p>
                 <p class="txtRD2" style="color: #E48D36">BARICHARA</p>
-                <div class="estrellas">
+                <section class="estrellas">
                     <img src="Image/Estrella.svg">
                     <img src="Image/Estrella.svg">
                     <img src="Image/Estrella.svg">
                     <img src="Image/Estrella.svg">
                     <img src="Image/Estrella.svg">
-                </div>
-                <div class ="check"><img src="Image/Check.svg"></div>
-                <div class ="check2"><img src="Image/Check.svg"></div>
+                </section>
+                <section class="check"><img src="Image/Check.svg"></section>
+                <section class="check2"><img src="Image/Check.svg"></section>
                 <div class="desc">
                     <p class="text1">3 DIAS (2 NOCHES)</p>
                     <p class="text2">DESAYUNO INCLUIDO</p>
@@ -173,56 +178,56 @@
                         <span style="font-size: 15px;" style="font-family: poppinsRegular;">c/u</span>
                     </p>
                     <a href="destinos.html">
-                        <div class="btnRecomendadoDia">
+                        <section class="btnRecomendadoDia">
                             <p class=txtbtn>RESERVA AHORA!</p>
-                        </div>
+                        </section>
                     </a>
                 </div>
             </div>
-        </section>
-        <section>
+        </div>
+        <div>
             <div class="nuevasAventuras">
-                <div><img class="bannerAventuras" src="Image/Valle.jpg"></div>
+                <section><img class="bannerAventuras" src="Image/Valle.jpg"></section>
                 <div class="cardAventuras">
-                    <div class="grupoCard1">
-                        <div class="cardP1NA"><a href="index.html">
-                                <div class="card1NA">
+                    <section class="grupoCard1">
+                        <section class="cardP1NA"><a href="index.html">
+                                <section class="card1NA">
                                     <img class="destinop1" src="Image/Cabañas.jpg">
-                                </div>
-                        </div>
-                        <div class="btnAventuras2">
+                                </section>
+                        </section>
+                        <section class="btnAventuras2">
                             <p class=txtbtn>CABAÑAS / SAN ANDRES
                                 <span style="font-weight:500; font-size:15px; letter-spacing: 0.4px;">DESDE
                                     250.000</span>
                             </p>
-                        </div></a>
-                    </div>
-                    <div class="grupoCard2">
-                        <div class="cardP2NA"><a href="index.html">
-                                <div class="card2NA">
+                        </section></a>
+                    </section>
+                    <section class="grupoCard2">
+                        <section class="cardP2NA"><a href="index.html">
+                                <section class="card2NA">
                                     <img class="destinop2" src="Image/Glamping.jpg">
-                                </div>
-                        </div>
-                        <div class="btnAventuras3">
+                                </section>
+                        </section>
+                        <section class="btnAventuras3">
                             <p class=txtbtn>GLAMPING / BOGOTÁ
                                 <span style="font-weight:500; font-size:15px; letter-spacing: 0.4px;">DESDE
                                     $150.000</span>
                             </p>
-                        </div></a>
-                    </div>
-                    <div class="grupoCard3">
-                        <div class="cardP3NA"><a href="index.html">
-                                <div class="card3NA">
+                        </section></a>
+                    </section>
+                    <section class="grupoCard3">
+                        <section class="cardP3NA"><a href="index.html">
+                                <section class="card3NA">
                                     <img class="destinop3" src="Image/bungalows.jpg">
-                                </div>
-                        </div>
-                        <div class="btnAventuras4">
+                                </section>
+                        </section>
+                        <section class="btnAventuras4">
                             <p class=txtbtn>BUGALOWS / CARTAGENA
                                 <span style="font-weight:500; font-size:15px; letter-spacing: 0.4px;">DESDE
                                     550.000</span>
                             </p>
-                        </div>
-                    </div></a>
+                        </section>
+                    </section></a>
                 </div>
             </div>
             <div class="textAventuras">
@@ -230,21 +235,21 @@
                     <span class="txt2Aventuras">AVENTURAS</span>
                 </p>
                 <a href="destinos.html">
-                    <div class="btnAventuras">
+                    <section class="btnAventuras">
                         <p class=txtbtn>PRUEBA ALGO NUEVO</p>
-                    </div>
+                    </section>
 
                 </a>
             </div>
 
-        </section>
-        <section class="App" style="position: relative; left: 0; top: 0px;">
+        </div>
+        <div class="App" style="position: relative; left: 0; top: 0px;">
             <img class="fondoApp" src="Image/Fondo.svg">
             <div class="cajaApp">
 
                 <img class="mockup" src="Image/Appmockup.png">
                 <img class="btnStore" src="Image/btnStore.png">
-                <div class="cajaTxtApp">
+                <section class="cajaTxtApp">
                     <p class="textApp"><span class="txtApp1">PRÓXIMAMENTE<br> NUESTRA <span
                                 class="txtApp1-1">APP</span></span></p> <br>
                     <p class="textApp2"><span class="txtApp2">SI ERES UNO DE LOS PRIMEROS,</span><br>
@@ -252,43 +257,43 @@
                         <span class="txtApp4">EN TU PRIMERA RESERVA</span>
                         <br><br><span class="txtApp5">MUY PRONTO VALIDO EN:</span>
                     </p>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="conocenos">
             <p>Conócenos</p>
             <ul class="listaConocenos">
-                <li>¿Qué es MiViaje.com?</li>
-                <li>Privacidad</li>
-                <li>Términos</li>
-                <li> Mapa del sitio</li>
-                <li> Datos de la empresa</li>
+                <a href="404.html"><li>¿Qué es MiViaje.com?</li></a> 
+                <a href="404.html"><li>Privacidad</li></a> 
+                <a href="404.html"><li>Términos</li></a> 
+                <a href="404.html"> <li> Mapa del sitio</li></a> 
+                <a href="404.html"><li> Datos de la empresa</li></a> 
             </ul>
 
         </div>
         <div class="dudas">
             <p>¿Dudas?<br>
                 Encuéntranos</p>
-            <ul class="listaDudas">
-                <li>Centro de ayuda</li>
-                <li>Reversión de Pagos</li>
-                <li>(xxx) xxx xxxx xx</li>
-                <li>info@miviaje.com</li>
-            </ul>
+                <ul class="listaDudas">
+                    <a href="404.html"><li>Centro de ayuda</li></a>
+                    <a href="404.html"><li>Reversión de Pagos</li></a>
+                    <li>(xxx) xxx xxxx xx</li>
+                    <li>info@miviaje.com</li>
+                </ul>
 
         </div>
 
         <h1 class=logoFooter><a title="logoFooter" href="Index.html">
-        <img id="logoFooter" src="Image/LogoBlanco.svg" alt="logoFooter"></a></h1>
+                <img id="logoFooter" src="Image/LogoBlanco.svg" alt="logoFooter"></a></h1>
         <div class="redesSociales">
-            
-            <img src="Image/Instagram.png" class="instagram">
-            <img src="Image/Facebook.png" class="facebook">
-            <img src="Image/Telegram.png" class="telegram">
-            <img src="Image/Twitter.png" class="twitter">
-            
+
+            <a href="404.html"><img src="Image/Instagram.png" class="instagram"></a>
+            <a href="404.html"><img src="Image/Facebook.png" class="facebook"></a>
+            <a href="404.html"><img src="Image/Telegram.png" class="telegram"></a>
+            <a href="404.html"><img src="Image/Twitter.png" class="twitter"></a>
+
 
         </div>
         <p class="txtFinal">Copyright - Miviaje.com - 2022</p>

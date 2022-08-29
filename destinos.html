@@ -3,7 +3,7 @@
 <html leng="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
     <title>MiViaje.com</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styleDestinos.css">
@@ -15,8 +15,8 @@
 <body>
     <header>
         <nav>
-            <h1 class="logo"><a title="logoInicio" href="Index.html">
-                    <img id="logo" src="Image/LogoBlanco.svg" alt="logoInicio"></a></h1>
+            <h1 class="logo"><a title="miviaje.com" href="Index.html">
+                    <img id="logo" src="Image/logoBlanco.svg" alt="miviaje.com"></a></h1>
             <ul>
                 <li><a href="index.html">Home</li></a>
                 <li><a href="destinos.html" style="color:#E48D36">Destinos</li></a>
@@ -26,84 +26,73 @@
         </nav>
     </header>
     <main>
-        <div id="box">
-            <section class="formulario">
-                <div class="cajaPrincipal">
-                    <div class="ciudad">
-                        <div class="imgCiudad">
-                            <img src="Image/VectoricoCiudad.svg">
-                        </div>
-                        <div class="datosCiudad">
-                            <p>Ciudad</p>
-                            <select class="select1" style="width: 147px;">
-                                <option value="opcion 1" selected>BARICHARA</option>
-                                <option value="opcion 3">BOGOTÁ</option>
-                                <option value="opcion 4">CALÍ</option>
-                                <option value="opcion 5">CARTAGENA</option>
-                                <option value="opcion 6">SAN ANDRES</option>
-                                <option value="opcion 7">SANTA MARTA</option>
-                                <option value="opcion 8">LETICIA</option>
-                            </select>
-                        </div>
+     <div id="box">
+       <section class="formulario">
+            <div class="cajaPrincipal">
+                <div class = "ciudad">
+                    <div class ="imgCiudad" >
+                        <img src="Image/VectoricoCiudad.svg"></div>
+                    <div class ="datosCiudad">
+                        <p>Ciudad</p>
+                        <select class="select1" style="width: 147px;">
+                            <option value="opcion 1">BARICHARA</option>
+                            <option value="opcion 2" selected>BARRANQUILLA</option>
+                            <option value="opcion 3">BOGOTÁ</option>
+                            <option value="opcion 4">CALÍ</option>
+                            <option value="opcion 5">CARTAGENA</option>
+                            <option value="opcion 6">SAN ANDRES</option>
+                            <option value="opcion 7">SANTA MARTA</option>
+                            <option value="opcion 8">LETICIA</option>
+                        </select>
+                    </div>
 
-                    </div>
-                    <div class="checkIn">
-                        <div class="imgCalendarioIN"><img src="Image/Vectorcalendario.svg"></div>
-                        <div class="datosCheckIN">
-                            <p>Check In</p>
-                            <input class="cajaIn" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
-                                style="width: 100px;" onkeydown="return false">
-                        </div>
-                    </div>
-                    <div class="checkOut">
-                        <div class="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></div>
-                        <div class="datosCheckOut">
-                            <p>Check Out</p>
-                            <input class="cajaOut" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
-                                style="width: 100px;" onkeydown="return false">
-                        </div>
-                    </div>
-                    <div class="huespedes">
-                        <div class="imgHuespedes"><img src="Image/icoHuesped.svg ">
-                        </div>
-                        <div class="datosHuespedes">
-                            <p>Huespedes</p>
-                            <select class="select2">
-                                <option value="opcion 1">1 Adulto</option>
-                                <option value="opcion 2" selected>2 Adultos</option>
-                                <option value="opcion 3">3 Adultos</option>
-                                <option value="opcion 4">4 Adultos</option>
-
-                            </select>
-                        </div>
-                        <img class="img3" src="Image/VectoricoCiudad.svg">
-                        <div>
-                            <select class="select3" style="width: 80px;">
-                                <option value="opcion 0">1 hab</option>
-                                <option value="opcion 1">2 hab</option>
-                                <option value="opcion 2">2 hab</option>
-                                <option value="opcion 3">3 hab</option>
-                                <option value="opcion 4">4 hab</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="buscar"> <a href="destinos.html">
-                            <div class="imgbuscar"><img src="Image/lupa.svg"></div>
-                    </div></a>
                 </div>
-                <!--   TAL VEZ SE INTEGRE...
-                        <div class="habitaciones" name="habitaciones" style="width: 5px;">
-                            <label>Habitaciones</label>
-                            <select class = "select4">
-                                <option value="opcion 1">1 Habitacion</option>
-                                <option value="opcion 2">2 Habitaciones</option>
-                                <option value="opcion 3">3 Habitaciones</option>
-                                <option value="opcion 4">4 Habitaciones</option> 
-                            </select>
-                        </div> -->
-            </section>
+                <div class = "checkIn">
+                    <div class ="imgCalendarioIN" ><img src="Image/Vectorcalendario.svg"></div>
+                    <div class ="datosCheckIN">
+                        <p>Check In</p>
+                        <input class="cajaIn" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
+                        style="width: 100px;" onkeydown="return false">
+                    </div>
+                </div>
+                <div class = "checkOut">
+                    <div class ="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></div>
+                    <div class ="datosCheckOut">
+                        <p>Check Out</p>
+                        <input class="cajaOut" type="date" min="2022-08-25" max="2023-02-22" value="2022-08-28"
+                            style="width: 100px;" onkeydown="return false">    
+                    </div>
+                </div>
+                <div class = "huespedes">
+                    <div class ="imgHuespedes"><img src="Image/icoHuesped.svg ">
+                        </div>
+                    <div class ="datosHuespedes">
+                        <p>Huespedes</p>
+                        <select class="select2">
+                            <option value="opcion 1">1 Adulto</option>
+                            <option value="opcion 2" selected>2 Adultos</option>
+                            <option value="opcion 3">3 Adultos</option>
+                            <option value="opcion 4">4 Adultos</option>
 
-        </div>
+                        </select>
+                    </div> 
+                    
+                    <div>
+                        <img class="img3H" src="Image/VectoricoCiudad.svg">
+                        <select class="select3" style="width: 80px;">
+                            <option value="opcion 0">1 hab</option>
+                            <option value="opcion 1">2 hab</option>
+                            <option value="opcion 2">3 hab</option>
+                            <option value="opcion 3">4 hab</option>
+                        </select>
+                    </div>
+                </div>
+                <div class = "buscar">   <a href="destinos.html">
+                     <div class="imgbuscar"><img src="Image/lupa.svg"></div>  
+                </div></a>
+            </div>
+        </section>
+     </div>
 
 
         <section>
@@ -141,7 +130,7 @@
                 <div class="destino3">
                     <div class="cardD3"><a href="destino-reservado.html">
                             <div class="card3">
-                                <img class="destinop3-1" src="Image/medellin.webp">
+                                <img class="destinop3-1" src="Image/medellin.jpg">
                             </div>
 
                     </div></a>
@@ -162,7 +151,7 @@
                 <div class="destino4">
                     <div class="cardD1"><a href="destino-reservado.html">
                             <div class="card1">
-                                <img class="destinop1" src="Image/SanAndres.webp">
+                                <img class="destinop1" src="Image/SanAndres.jpg">
                             </div>
                     </div></a>
                     <div class="txtCard1">
@@ -225,7 +214,7 @@
                 <div class="destino8">
                     <div class="cardD2"><a href="destino-reservado.html">
                             <div class="card2">
-                                <img class="destinop2" src="Image/Leticia.jpeg">
+                                <img class="destinop2" src="Image/Leticia.jpg">
                             </div>
 
                     </div></a>
@@ -312,23 +301,23 @@
         <div class="conocenos">
             <p>Conócenos</p>
             <ul class="listaConocenos">
-                <li>¿Qué es MiViaje.com?</li>
-                <li>Privacidad</li>
-                <li>Términos</li>
-                <li> Mapa del sitio</li>
-                <li> Datos de la empresa</li>
+                <a href="404.html"><li>¿Qué es MiViaje.com?</li></a> 
+                <a href="404.html"><li>Privacidad</li></a> 
+                <a href="404.html"><li>Términos</li></a> 
+                <a href="404.html"> <li> Mapa del sitio</li></a> 
+                <a href="404.html"><li> Datos de la empresa</li></a> 
             </ul>
 
         </div>
         <div class="dudas">
             <p>¿Dudas?<br>
                 Encuéntranos</p>
-            <ul class="listaDudas">
-                <li>Centro de ayuda</li>
-                <li>Reversión de Pagos</li>
-                <li>(xxx) xxx xxxx xx</li>
-                <li>info@miviaje.com</li>
-            </ul>
+                <ul class="listaDudas">
+                    <a href="404.html"><li>Centro de ayuda</li></a>
+                    <a href="404.html"><li>Reversión de Pagos</li></a>
+                    <li>(xxx) xxx xxxx xx</li>
+                    <li>info@miviaje.com</li>
+                </ul>
 
         </div>
 
@@ -336,10 +325,10 @@
                 <img id="logoFooter" src="Image/LogoBlanco.svg" alt="logoFooter"></a></h1>
         <div class="redesSociales">
 
-            <img src="Image/Instagram.png" class="instagram">
-            <img src="Image/Facebook.png" class="facebook">
-            <img src="Image/Telegram.png" class="telegram">
-            <img src="Image/Twitter.png" class="twitter">
+            <a href="404.html"><img src="Image/Instagram.png" class="instagram"></a>
+            <a href="404.html"><img src="Image/Facebook.png" class="facebook"></a>
+            <a href="404.html"><img src="Image/Telegram.png" class="telegram"></a>
+            <a href="404.html"><img src="Image/Twitter.png" class="twitter"></a>
 
 
         </div>
