@@ -296,30 +296,31 @@ nav a:hover {
     outline: none;
 }
 
-.img3 {
+.img3H{
+    display: inline-block;
     scale: 60%;
-    float: left;
-    margin: -24px 0 0 120px;
+    margin: 29px 0 0 -5px;
 }
 
 .select3 {
 
-    float: left;
+    display: inline-block;
     scale: 100%;
     appearance: none;
     background-color: transparent;
     border: none;
-    padding: 0 1em 0 0;
+    position: relative;
+    top: -23px;
     margin: 0;
     width: 100%;
     color: #023F76;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight:600;
     font-size: 13px;
     cursor: pointer;
     outline: none;
-    margin: -20px 0 0 145px;
-
+    margin: 0 0 0 155px;
+    
 }
 
 
@@ -531,7 +532,7 @@ nav a:hover {
 
 .destinop1 {
     width: 200%;
-    margin-left: -30px;
+    margin-left: 30px;
 }
 
 
@@ -589,6 +590,10 @@ nav a:hover {
     margin-left: -30px;
 }
 
+.destino4 .destinop1 {
+    margin: -30px 0 0 -150px;
+
+}
 
 .destinos3 b {
     display: inline-block;

@@ -440,20 +440,21 @@ nav a:hover {
 
 }
 
-.img3{
+.img3H{
+    display: inline-block;
     scale: 60%;
-    float:left;
-    margin: -24px 0 0 120px;
+    margin: 28px  0 0 -5px;
 }
 
 .select3 {
 
-    float: left;
+    display: inline-block;
     scale: 100%;
     appearance: none;
     background-color: transparent;
     border: none;
-    padding: 0 1em 0 0;
+    position: relative;
+    top: -23px;
     margin: 0;
     width: 100%;
     color: #023F76;
@@ -462,7 +463,7 @@ nav a:hover {
     font-size: 13px;
     cursor: pointer;
     outline: none;
-    margin: -20px 0 0 145px;
+    margin: 0 0 0 155px;
     
 }
 
@@ -679,7 +680,7 @@ nav a:hover {
 
 .bannerAventuras {
     width: 150%;
-    margin: -470px 0 0 0;
+    margin: -460px 0 0 0;
     opacity: 25%;
 }
 
