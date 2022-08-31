@@ -1,61 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  RESET
++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  FUENTES
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  HEADER - MENU - BLANCO
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-
 header {
     background: #ffffff;
-    padding: 0px 0;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0px 0 10px 0;
     box-sizing: border-box;
     box-shadow: 2px 4px 17px rgba(0, 0, 0, 0.25);
-    z-index: 1000;
-
+    z-index: 100;
 }
-
-.menu {
-    width: 100%;
-    /* DIMENSIONAR LOS PIXELES DE LAS PANTALLAS*/
-    position: relative;
-    margin: 0 auto;
-    /* AL CAMBIAR DE TAMAÑO DE PANTALLA ESTE SE REDIMENSIONA*/
-}
-
 .logo {
-    margin: 30px 0 0 80px;
+    width: 40%;
+    padding: 30px 0 0 80px;
 }
-
 nav {
-    position: absolute;
-    /* CREAR UNA POSICION APARTIR DE UN PUNTO*/
-    top: 10px;
-    right: 70px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-bottom: 30px;
+    margin: -30px 0 0 -60px;
 }
-
-nav li {
-    display: inline;
-    /* AJUSTAR LATERALMENTE EL MENU*/
-}
-
 nav a {
     color: #023F76;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.875rem;
     text-decoration: none;
     margin: 0 0 0 15px;
-    /* ESPACIAMIENTO INTERNO (ARRIBA ABAJO DERECHA IZQUIERDA) */
 }
-
 nav a:hover {
     color: #E48D36;
     transition: 0.5s;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  HEADER - MENU - AZUL
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.headeAzul {
+    background: #023F76;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    box-shadow: none;
+    z-index: 100;
+}
+.headeAzul nav a {
+    color: #ffffff;
+    font-weight: 400;
+}
+.headeAzul .logoblanco {
+    width: 40%;
+    padding: 30px 0 0 80px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++
@@ -63,26 +116,21 @@ nav a:hover {
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* :::::::::::::: BANNER ::::::::::::::*/
 
-.container {
-    
+.cajaBanner {
     width: 100%;
     height: 600px;
     overflow: hidden;
     margin: 20px 0 0 0px;
     z-index: 1;
 }
-
 .banner {
     width: 100%;
     margin-top: -150px;
-    z-index: -2;
 }
-
 .txtBanner2 a {
     text-decoration: none;
     color: #023F76;
 }
-
 .txtBanner {
     font-size: 3.438rem;
     font-family: 'Poppins', sans-serif;
@@ -94,7 +142,6 @@ nav a:hover {
     letter-spacing: -2px;
     text-shadow: 10px 10px 40px #ffffff;
 }
-
 .txtBanner2 {
     font-size: 1.25rem;
     font-family: 'Poppins', sans-serif;
@@ -104,34 +151,29 @@ nav a:hover {
     left: 90px;
     text-shadow: 10px 10px 40px #ffffff;
 }
-
 .txtBanner2:hover {
     transform: scale(1.03);
     transition: 0.5s all;
     cursor: pointer;
 }
 
-
-/*::::::::: CARDS :::::::::*/
-
+/*:::::::::::: CARDS ::::::::::::*/
 .cardP1 a {
     text-decoration: none;
 }
-
-.cardP1 {
+.cardP1, .cardP2, .cardP3{
     background: rgba(255, 255, 255, 0.6);
     width: 170PX;
     height: 230px;
     overflow: hidden;
-    position: absolute;
-    top: 300px;
-    left: 80px;
-    /* position: relative;
-    margin: -380px 0 0 60px; */
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
     border-radius: 20px 20px 10px 10px;
 }
-
+.cardP1 {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
 .card1 {
     width: 151PX;
     height: 160px;
@@ -139,12 +181,10 @@ nav a:hover {
     margin: 10px;
     border-radius: 10px 10px 4px 4px;
 }
-
-.destinop1 {
+.destinop1, .destinop2, .destinop3 {
     width: 200%;
     margin-left: -30px;
 }
-
 .txtCard1 b {
     margin-left: 10px;
     font-family: 'Poppins', sans-serif;
@@ -152,7 +192,6 @@ nav a:hover {
     color: #023F76;
     font-size: 0.938rem;
 }
-
 .txtCard1 p {
     color: #023F76;
     margin-left: 10px;
@@ -161,25 +200,14 @@ nav a:hover {
     font-size: 0.75rem;
     line-height: 25px
 }
-
 .cardP2 a {
     text-decoration: none;
 }
-
 .cardP2 {
-    background: rgba(255, 255, 255, 0.6);
-    width: 170PX;
-    height: 230px;
-    overflow: hidden;
     position: absolute;
     top: 300px;
     left: 270px;
-    /* position: relative;
-    margin: -380px 0 0 60px; */
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 20px 20px 10px 10px;
 }
-
 .card2 {
     width: 150PX;
     height: 160px;
@@ -187,30 +215,14 @@ nav a:hover {
     margin: 10px;
     border-radius: 10px 10px 4px 4px;
 }
-
-.destinop2 {
-    width: 200%;
-    margin-left: -140px;
-}
-
 .cardP3 a {
     text-decoration: none;
 }
-
 .cardP3 {
-    background: rgba(255, 255, 255, 0.6);
-    width: 170PX;
-    height: 230px;
-    overflow: hidden;
     position: absolute;
     top: 300px;
     left: 460px;
-    /* position: relative;
-    margin: -380px 0 0 60px; */
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 20px 20px 10px 10px;
 }
-
 .card3 {
     width: 151PX;
     height: 160px;
@@ -218,36 +230,19 @@ nav a:hover {
     margin: 10px;
     border-radius: 10px 10px 4px 4px;
 }
-
-.destinop3 {
-    width: 200%;
-    margin-left: -30px;
-}
-
-
 /*::::::::: HOVER CARDS :::::::::::*/
-.cardP1:hover {
+.cardP3:hover, .cardP1:hover, .cardP2:hover {
     transform: scale(1.03);
     transition: 0.5s all;
 }
-
-.cardP2:hover {
-    transform: scale(1.03);
-    transition: 0.5s all;
-}
-
-.cardP3:hover {
-    transform: scale(1.03);
-    transition: 0.5s all;
-}
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  CAJA FORMULARIO RESERVA
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 .formulario{
     margin-top: -150px;
     margin-bottom: -90px;
-    position: relative;
+    height: inherit;
+    display: flex;
 }
 .cajaPrincipal{
     background-color: rgb(255, 255, 255);
@@ -268,17 +263,14 @@ nav a:hover {
     border-radius: 10px 0 0 10px;
     margin: 20px 4px 0 5px;
 }
-
 .ciudad .imgCiudad{
     float: left;
     margin: 20px 0 0 20px ;
     
 }
-
 .ciudad .datosCiudad {
     justify-content: right;
-    margin: 15px 0 0 60px;
-    
+    margin: 15px 0 0 60px; 
 }
 .datosCiudad p{
     font-size: 0.813rem;
@@ -286,9 +278,7 @@ nav a:hover {
     font-weight: 400;
     color: #023F76;
     padding-top: 4px;
-
 }
-
 .datosCiudad select{
     scale: 100%;
     appearance: none;
@@ -303,36 +293,31 @@ nav a:hover {
     font-size: 0.875rem;
     cursor: pointer;
     outline: none;
-
 }
-
-
-/*:::::::::: CHECK IN :::::::::::*/
-.cajaPrincipal .checkIn{
+/*::::::::::::: CHECK IN - CHECK OUT :::::::::::::*/
+.cajaPrincipal .checkIn, .checkOut{
     background-color: #F9F7F7;
     width: 165px;
     height: 60px;
     margin-right: 4px;
     margin-top: 20px; 
 }
-.checkIn .imgCalendarioIN{
+.checkIn .imgCalendarioIN, .checkOut .imgCalendarioOut{
     float: left;
     margin: 20px 0 0 15px ; 
 }
-
-.checkIn .datosCheckIN {
-    
+.checkIn .datosCheckIN, .checkOut .datosCheckOut {
     float: left;
     justify-content: right;
     margin: 15px 0 0 15px; 
 }
-.datosCheckIN p{
+.datosCheckIN p, .datosCheckOut p{
     font-size: 0.813rem;
-    font-family: Poppins,sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 400;
     color: #023F76;
 }
-.datosCheckIN .cajaIn {
+.datosCheckIN .cajaIn, .cajaOut {
     border: none;
     background-color: transparent;
     position: absolute;
@@ -345,53 +330,6 @@ nav a:hover {
     margin-left: -3px;
     margin-top: 3px;
 }
-
-
-
-/*:::::::::: CHECK OUT :::::::::::*/
-.cajaPrincipal .checkOut{
-    background-color: #F9F7F7;
-    width: 165px;
-    height: 60px;
-    margin-right: 4px;
-    margin-top: 20px; 
-}
-.checkOut .imgCalendarioOut{
-    float: left;
-    margin: 20px 0 0 15px ; 
-}
-
-.checkOut .datosCheckOut { 
-    float: left;
-    justify-content: right;
-    margin: 15px 0 0 15px; 
-}
-
-.datosCheckOut p{
-    font-size: 0.813rem;
-    font-family: Poppins,sans-serif;
-    font-weight: 400;
-    color: #023F76;
-}
-
-.datosCheckOut .cajaOut {
-    
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-weight:600;
-    color: #023F76;
-    font-size: 0.813rem;
-    text-decoration: none;
-    cursor: pointer;
-    margin-left: -3px;
-    margin-top: 3px;
-}
-
-
-
-
 /*:::::::::: HUESPEDES :::::::::::*/
 .cajaPrincipal .huespedes{
     background-color: #F9F7F7;
@@ -401,15 +339,11 @@ nav a:hover {
     border-radius: 0 10px 10px 0;
     margin-top: 20px; 
 }
-
 .huespedes .imgHuespedes {
     scale: 120%;
     float: left;
     margin: 20px 0 0 20px ;
 }
-
-
-
 .huespedes .datosHuespedes {
     float: left;
     justify-content: right;
@@ -417,13 +351,11 @@ nav a:hover {
 }
 .datosHuespedes p{
     font-size: 0.813rem;
-    font-family: Poppins,sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 400;
     color: #023F76;
 }
-
 .select2 {
-    
     scale: 100%;
     appearance: none;
     background-color: transparent;
@@ -437,17 +369,13 @@ nav a:hover {
     font-size: 0.813rem;
     cursor: pointer;
     outline: none;
-
 }
-
 .img3H{
     display: inline-block;
     scale: 60%;
     margin: 28px  0 0 -5px;
 }
-
 .select3 {
-
     display: inline-block;
     scale: 100%;
     appearance: none;
@@ -464,12 +392,7 @@ nav a:hover {
     cursor: pointer;
     outline: none;
     margin: 0 0 0 150px;
-    
 }
-
-
-
-
 /*:::::::::: BUSCAR :::::::::::*/
 .buscar{
     scale: 100%;
@@ -480,71 +403,37 @@ nav a:hover {
     margin-top: 20px; 
     margin-left: 1px;
     cursor: pointer;
-    
 }
-
 .buscar .imgbuscar{
+    border: none;
     scale: 50%;
     padding: 4px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
+    background: #E48D36;
 }
 .buscar:hover {
     scale: 1.01;
     transition: 0.2s all;
 }
-
-
-/*--------HABITACIONES-----------*/
-
-.select4 {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    margin: -56px 0 0 670px;
-    width: 100%;
-    color: #023F76;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 0.813rem;
-    cursor: pointer;
-    line-height: inherit;
-    outline: none;
-    /* BORDE DE SELCCION*/
-    padding: 5px;
-}
-
-
-.habitaciones label {
-    position: relative;
-    top: -55px;
-    left: 610px;
-    font-size: 0.813rem;
-}
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  RECOMENDADO DEL DIA
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 .recoDia {
     display: block;
-    margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
-
-.check {
+.check, .check2 {
     width: 9%;
     position: absolute;
     margin: 35px 0 0 -10px;
 }
-
 .check2 {
-    width: 9%;
-    position: absolute;
     margin: 100px 0 0 -10px;
 }
-
 .cajaDia {
     background: #ffffff;
     width: 378px;
@@ -560,30 +449,24 @@ nav a:hover {
     overflow: hidden;
     cursor: pointer;
 }
-
 .cajaDia:hover {
     transform: scale(1.02);
     transition: 0.5s all;
 }
-
 .estrellas {
     text-align: left;
 }
-
 .cajaDia img {
     width: 100%
 }
-
 .txtRD2 {
     text-align: left;
     font-size: 4.375rem;
 }
-
 .txtRD {
     text-align: left;
     letter-spacing: -0.3px;
 }
-
 .cajaText {
     scale: 85%;
     font-size: 1.875rem;
@@ -597,48 +480,28 @@ nav a:hover {
     top: 40px;
     left: 20px;
 }
-
 .recoDia .desc {
     text-align: left;
 }
-
 .desc .text1 {
     font-size: 1.125rem;
     line-height: 30px;
 }
-
-.desc .text2 {
+.desc .text2, .text4 {
     font-size: 1.25rem;
     line-height: 35px;
     margin: 0 0 0 30px;
-
 }
-
-.desc .text3 {
+.desc .text3,.text5 {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin: 0 0 0 30px;
 }
-
-.desc .text4 {
-    font-size: 1.25rem;
-    line-height: 35px;
-    margin: 0 0 0 30px;
-}
-
-.desc .text5 {
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    margin: 0 0 0 30px;
-}
-
 .desc .text6 {
     margin: 30px 0 0 0;
     letter-spacing: -2px;
 }
-
 .btnRecomendadoDia {
     background: #E48D36;
     width: 200px;
@@ -648,7 +511,6 @@ nav a:hover {
     border-radius: 7px;
     cursor: pointer;
 }
-
 .btnRecomendadoDia .txtbtn {
     font-size: 0.938rem;
     color: #ffffff;
@@ -660,39 +522,33 @@ nav a:hover {
     transform: scale(1.04);
     transition: 0.5s all;
 }
-
 .cajaText a {
     text-decoration: none;
 }
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  NUEVAS AVENTURAS
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 .nuevasAventuras {
     background-color: #ffffff;
     text-align: center;
-    display: block;
+    display: flex;
     overflow: hidden;
     margin-top: 100px;
     width: 100%;
     height: 420px;
 }
-
 .bannerAventuras {
     width: 150%;
-    margin: -460px 0 0 0;
+    margin: -760px 0 0 0;
     opacity: 25%;
 }
-
-/* ------------TEXTO--------------*/
+/* ::::::::::: TEXTO :::::::::::*/
 .textAventuras {
     scale: 90%;
-    display: block;
     position: absolute;
     top: 1300px;
     left: 130px;
 }
-
 .textAventuras .txt1Aventuras {
     font-size: 1.75rem;
     letter-spacing: -1px;
@@ -701,7 +557,6 @@ nav a:hover {
     margin-left: 35px;
     color: #023F76;
 }
-
 .textAventuras .txt2Aventuras {
     font-size: 2.813rem;
     font-family: 'Poppins', sans-serif;
@@ -710,10 +565,7 @@ nav a:hover {
     text-align: right;
     color: #E48D36;
 }
-
-
-
-/* ------------BOTONES--------------*/
+/* :::::::::::::: BOTONES :::::::::::::::::*/
 .btnAventuras {
     background: #E48D36;
     width: 200px;
@@ -722,7 +574,6 @@ nav a:hover {
     border-radius: 7px;
     cursor: pointer;
 }
-
 .btnAventuras .txtbtn {
     font-size: 0.938rem;
     color: #ffffff;
@@ -731,77 +582,29 @@ nav a:hover {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-
-.btnAventuras:hover {
-    transform: scale(1.04);
-    transition: 0.5s all;
-}
-
 .textAventuras a {
     text-decoration: none;
 }
-
-.btnAventuras2 {
+.btnAventuras2, .btnAventuras3, .btnAventuras4{
     background: #023F76;
     width: 150px;
     height: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btnAventuras2 {
     position: absolute;
     margin: 580px 0 0 90px;
-    border-radius: 7px;
-    cursor: pointer;
 }
-
-.btnAventuras2 .txtbtn {
-    font-size: 0.688rem;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    line-height: 15px;
-}
-
-.grupoCard1:hover {
-    transform: scale(1.01);
-    transition: 0.5s;
-}
-
 .btnAventuras3 {
-    background: #023F76;
-    width: 150px;
-    height: 50px;
     position: absolute;
     margin: 610px 0 0 340px;
-    border-radius: 7px;
-    cursor: pointer;
 }
-
-.btnAventuras3 .txtbtn {
-    font-size: 0.688rem;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    line-height: 15px;
-}
-
-.grupoCard2:hover {
-    transform: scale(1.01);
-    transition: 0.5s;
-}
-
 .btnAventuras4 {
-    background: #023F76;
-    width: 150px;
-    height: 50px;
     position: absolute;
     margin: 560px 0 0 589px;
-    border-radius: 7px;
-    cursor: pointer;
 }
-
-.btnAventuras4 .txtbtn {
+.btnAventuras2 .txtbtn, .btnAventuras3 .txtbtn, .btnAventuras4 .txtbtn {
     font-size: 0.688rem;
     color: #ffffff;
     text-align: center;
@@ -810,230 +613,648 @@ nav a:hover {
     font-weight: 200;
     line-height: 15px;
 }
-
-.grupoCard3:hover {
+.grupoCard1:hover,.grupoCard2:hover, .grupoCard3:hover, .btnAventuras:hover {
     transform: scale(1.01);
     transition: 0.5s;
 }
-
-
-
-
-/* ------------CARDS--------------*/
+/*::::::::::: CARDS :::::::::*/
 .cardAventuras {
-    display: block;
     position: absolute;
     top: 880px;
     left: 400px;
 }
-
-.cardAventuras .cardP1NA {
+.cardAventuras .cardP1NA, .cardP2NA, .cardP3NA{
     background: rgba(255, 255, 255, 0.6);
     width: 210PX;
     height: 260px;
     overflow: hidden;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 10px 10px;
+} 
+.cardAventuras .cardP1NA {
     position: absolute;
     top: 350px;
     left: 40px;
-    /* position: relative;
-    margin: -380px 0 0 60px; */
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 20px 20px 10px 10px;
 }
-
-.cardAventuras .card1NA {
-    width: 110%;
-    height: 110%;
-    overflow: hidden;
-    margin: -10px;
-    border-radius: 10px 10px 4px 4px;
-}
-
-.cardAventuras .destinop1 {
-    width: 200%;
-}
-
 .cardAventuras .cardP2NA {
-    background: rgba(255, 255, 255, 0.6);
-    width: 210PX;
-    height: 260px;
-    overflow: hidden;
     position: absolute;
     top: 380px;
     left: 290px;
-    /* position: relative;
-    margin: -380px 0 0 60px; */
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 20px 20px 10px 10px;
 }
-
-.cardAventuras .card2NA {
+.cardAventuras .cardP3NA {
+    position: absolute;
+    top: 330px;
+    left: 540px;
+}
+.cardAventuras .card1NA, .card2NA, .card3NA{
     width: 120%;
     height: 110%;
     overflow: hidden;
-    margin-left: -40px;
-    margin-top: -20px;
     border-radius: 10px 10px 4px 4px;
 }
-
+.cardAventuras .card1NA{
+    margin: -10px;
+}
+.cardAventuras .card2NA, .card3NA{
+    margin: -20px 0 0 -40px;
+}
 .cardAventuras .destinop2 {
     width: 160%;
     margin: 20px 0px 0 -50px;
 }
-
-.cardAventuras .cardP3NA {
-    background: rgba(255, 255, 255, 0.6);
-    width: 210PX;
-    height: 260px;
-    overflow: hidden;
-    position: absolute;
-    top: 330px;
-    left: 540px;
-    /* position: relative;
-    margin: -380px 0 0 60px; */
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 20px 20px 10px 10px;
+.cardAventuras .destinop1 {
+    width: 200%;
 }
-
-.cardAventuras .card3NA {
-    width: 120%;
-    height: 110%;
-    overflow: hidden;
-    margin-left: -40px;
-    margin-top: -20px;
-    border-radius: 10px 10px 4px 4px;
-}
-
 .cardAventuras .destinop3 {
     width: 160%;
     margin: 20px 0px 0 -50px;
 }
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  APP
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 .App {
     width: 100%;
-    display: block;
+    display: flex;
     background: transparent;
     width: 100%;
-    height: 730px;
+    height: 720px;
     overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
 }
-
 .App .fondoApp {
     position: absolute;
     width: 110%;
-    margin: -50px 0 0 -700px;
+    margin: -50px 0 0 0px;
 }
-
 .cajaApp {
     background: transparent;
     width: 100%;
-    height: 730px;
+    height: 710px;
     display: inline-block;
-    margin-top: auto;
-    margin-left: auto;
     position: absolute;
     top: -30px;
     left: 0;
 }
-
 .cajaApp .mockup {
     position: absolute;
     width: 536px;
     height: 632px;
     margin: 80px 0 0 -60px;
-
 }
-
 .cajaApp .mockup:hover {
     transform: scale(1.01);
     transition: 0.2s all;
 }
-
 .cajaApp .btnStore {
     position: absolute;
     width: 220px;
     height: 160px;
     margin: 380px 0 0 -370px;
-
 }
-
 .cajaApp .cajaTxtApp {
     position: absolute;
     display: inline-table;
     width: 100%;
     margin: 0 0 0 -655px;
-
 }
-
 .cajaTxtApp .textApp {
     position: absolute;
     margin: 140px 0 0 250px;
 }
-
-.textApp .txtApp1 {
+.textApp .txtApp1, .txtApp1-1 {
     font-size: 2.188rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #023F76;
-
 }
-
 .textApp .txtApp1 .txtApp1-1 {
-    font-size: 2.188rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
     color: #E48D36;
 }
-
-.textApp2 .txtApp2 {
+.textApp2 .txtApp2, .txtApp4,.txtApp3, .txtApp5{
     font-size: 1.188rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #023F76;
 }
-
-.textApp2 .txtApp3 {
-    font-size: 1.188rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #023F76;
-}
-
 .textApp2 .txtApp3 .txtApp1-2 {
     font-size: 1.375rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #E48D36;
 }
-
-.textApp2 .txtApp4 {
-    font-size: 1.188rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #023F76;
-}
-
 .textApp2 .txtApp5 {
     font-size: 0.938rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #023F76;
     position: absolute;
     margin: 30px 0 0 -85px;
 }
-
 .textApp2 {
     position: absolute;
     margin: 240px 0 0 210px;
-
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//  :::::::::::::::::::::::::: PAGINA DESTINOS ::::::::::::::::::::::::
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  FORMULARIO BSUQUEDA
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#box{
+    position:fixed;
+    background-color: #023F76;
+    width: 100%;
+    height: 70px;
+    margin-top:-130px;
+    z-index: 30;
+}
+#box .formulario{
+    margin: -80px auto;
+    justify-content: center;
+ }
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  DESTINOS - COLUMNA 1
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.cajaPrincipalDestinos{
+    width: 100%;
+    height: 1150px;
+}
+.destinos {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 200px 0 0 -10px;
 }
 
+.destinos b {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #023F76;
+    font-size: 1.125rem;
+    padding-bottom: 10px;
+    margin:10px 0 0 45px;
+}
+.destinos p {
+    display: inline-block;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 20px;
+    margin:-10px 0 0 45px;
+}
+.destinos .cajaDestino {
+    background: rgba(255, 255, 255, 0.6);
+    width: 250PX;
+    height: 280px;
+    overflow: hidden;
+    display: inline-block;
+    margin-inline-start: 20px;
+    margin: 30px 0 0 35px;
+    box-shadow: 0px 0px 15px 0.2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.destinos .imgDestino1, .imgDestino3, .imgDestino6{
+    width: 200%;
+    margin-left: -30px;
+}
+.destinos .imgDestino2, .imgDestino4 {
+    width: 200%;
+    margin-left: -140px;
+}
+.destinos .imgDestino5{
+    width: 200%;
+    margin: 0 0 0 -100px;
+}
+.imgDestino7{
+    width: 130%;
+    margin-left: -30px;
+}
+.imgDestino8 {
+    width: 170%;
+    margin: -30px 0 0 -50px;
+}
+/*::::::::DESTINO 9:::::::::::::*/
+.destinos .destino9 .cajaDestino{
+    box-shadow: none;
+}
+.destinos .destino9 .cajaDestino span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.813rem;
+    position: relative;
+    top: 80px;
+    left: 5px;
+    line-height: 30px;
+    color:#023F76
+}
+.destinos .destino9 .cajaDestino p {
+    position: relative;
+    text-align: left;
+    padding-top: 60px;
+    margin: 20px 0 -40px 0px;
+    color: #023F76;
+    left: 5px;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  NUEVAS AVENTURAS
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.nuevasAventuras2 .cardAventuras{
+    margin: 290px 0 0 0;
+}
+.nuevasAventuras2{
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    margin-top: 100px;
+    width: 100%;
+    height: 420px;
+}
+.textAventuras2 {
+    scale: 100%;
+    position: absolute;
+    top: 1600px;
+    left: 130px;
+}
+.textAventuras2 .txt1Aventuras {
+    font-size: 1.75rem;
+    letter-spacing: -1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-left: 35px;
+    color:#023F76;
+}
+.textAventuras2 .txt2Aventuras {
+    font-size: 2.813rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: right;
+    color: #E48D36;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//  :::::::::::::::::: DESTINOS RESERVADOS ::::::::::::::::::::::::::::::
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+// HOTELES
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.hoteles {
+   display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 200px auto;
+    padding-top: 30px;
+}
+.hotel1, .hotel2, .hotel3{
+    margin-bottom: 50px;
+}
+.cajaHotelPrincipal {
+    background-color: #ffffff;
+    width: 730px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.2);
+}
+.cajaHotelPrincipal .caja1 {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 49%;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px 0px 0 10px;
+}
+.cajaHotelPrincipal .caja1 .informacion{
+    background-color: #ffffff;
+    width: 340px;
+    height: 135px;
+    margin: 10px 0 0 10px;
+}
+.cajaHotelPrincipal .caja1 .informacion .cajaText{
+    margin: -40px 0 0 -40px;
+}
+.cajaHotelPrincipal .caja2 {
+    scale: 90%;
+    display: inline-block;
+    width: 46%;
+    height: 300px;
+    overflow: hidden;
+    margin: -10px 0 0 -0px;
+    border-radius: 10px;
+    top: -10px;
+}
+/*::::::::::: CHECK IN :::::::::::::*/
+ .informacion .checkIn, .informacion .checkOut {
+    background-color: #F9F7F7;
+    width: 170px;
+    height: 60px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+.informacion .imgCalendarioIN, .informacion .checkOut .imgCalendarioOut {
+    float: left;
+    margin: 20px 0 0 15px;
+}
+.informacion .checkIn .datosCheckIN,.informacion .checkOut .datosCheckOut {
+    float: left;
+    justify-content: right;
+    margin: 15px 0 0 20px;
+}
+.informacion .datosCheckIN p, .informacion .datosCheckOut p, .informacion .datosHuespedes p{
+    font-size: 0.813rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #023F76;
+}
+.informacion .datosCheckIN .cajaIn,.informacion .datosCheckOut .cajaOut {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #023F76;
+    font-size: 0.813rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: -3px;
+    margin-top: 3px;
+}
+/*:::::::::: CHECK OUT :::::::::::*/
+.informacion .checkOut {
+    margin-top: -60px;
+    margin-left: 175px;
+    border-radius: 10px;
+}
+/*:::::::::: HUESPEDES :::::::::::*/
+.informacion .huespedes {
+    display: inline-block;
+    background-color: #F9F7F7;
+    width: 210px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top:10px;
+}
+.informacion .huespedess{
+    float: left;
+    margin: 20px 0 0 15px;
+}
+.informacion .select2, .informacion .select3 {
+    scale: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 3px 1em 0 0;
+    margin: 0;
+    width: 100%;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.813rem;
+    cursor: pointer;
+    outline: none;
+}
+.informacion .img3 {
+    display: inline-block;
+    scale: 60%;
+    margin: 28px  0 0 -5px;
+}
+.informacion .select3 {
+    display: inline-block;
+    position: relative;
+    top: -23px;
+    margin: 0 0 0 150px;
+}
+/*:::::::::: BOTON RESERVAR AHORA:::::::::::*/
+.btnreservarAhora a{
+    text-decoration: none;
+}
+.informacion button {
+    position: relative;
+    width: 130px;
+    height: 58px;
+    border: none;
+    padding: 15px;
+    font-size: 0.875rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 16px;
+    background-color: #E48D36;
+    border-radius: 10px;
+    top: -70px;
+    left: 215px;
+}
+.informacion button:hover {
+    scale: 1.03;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+/*:::::::::::HOTEL 1:::::::::::*/
+.hotel1 .caja2 img{
+    scale: 90%;
+    margin: -160px auto auto -190px;
+}
+.cajaText {
+    scale: 85%;
+    font-size: 1.875rem;
+    color: #023F76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative; 
+}
+.estrellas {
+    scale: 80%;
+    margin: 3px 0 0 -40px;
+}
+.hotel1 .check {
+    scale: 70%;
+    position: absolute;
+    margin: 25px 0 0 0px;
+}
+.hotel1 .check2 {
+    scale: 70%;
+    position: absolute;
+    margin: 45px 0 0 0px;
+}
+.hotel1 .desc .text2 {
+    font-size: 0.813rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 35px;
+    margin: -5px 0 0 0px;
+}
+.hotel1 .desc .text3, .hotel1 .desc .text5  {
+    font-size: 0.813rem;
+    color: #E48D36;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: -5px 0 0 30px;
+    line-height: 27px;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  FORMULARIO RESERVA - HOTEL SELECCIONADO
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.reserva{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    margin: 150px auto;
+}
+.reserva .hoteleSeleccionado{
+    display: inline-block;
+    width: 35%;
+    height: 550px;
+    overflow: hidden;
+}
+.hoteleSeleccionado .cajaHotelSelec{
+    margin: 10px auto;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+.reserva .formularioReserva {
+    display: inline-block;
+    width: 45%;
+    height: 550px;
+    overflow: hidden;
+}
+.formularioReserva .cajasTexto{
+    color: #023F76;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+.formularioReserva label{
+    display: block;
+    margin: 5px 0 0 85px;
+    padding: 10px 0 10px 0;
+    text-align: left;
+}
+.formularioReserva .inputForm{
+    display: block;
+    width: 70%;    
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color:  transparent;
+    background-color: #F9F7F7;
+}
+/*::::::::::: ELIMINAR FLECHAS CUADRO DE NUMEROS*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*:::::::::::: BOTON :::::::::::::::::*/
+.formularioReserva .boton{
+    font-size: 0.813rem;
+    color: white;
+    font-weight: bold;
+    background: #E48D36;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 200px;
+    padding: 12px 0;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0 0 75px;
+}
+.boton:hover{
+    transition: 0.5s all;
+    transform: scale(1.01); 
+} 
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+//  PAGINA -404
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.body404{
+    background-color: #023F76;
+}
+.p404{
+    width: 100%;
+    height: 690px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.caja404{
+    display: flex;
+    justify-content: center;
+}
+.p404 .txt404{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 200px 0 0 0;
+    text-align: center;
+    overflow: hidden;
+}
+.p404 .img404{
+    display: inline-block;
+    width: 450px;
+    height: 400px;
+    margin: 200px 0 0 0;
+}
+.p404 .txt404 .txt1{
+    font-size: 9.375rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: -12px;
+    color: #023F76;
+    margin: 0 0 0 -35px;
+}
+.p404 .txt404 .txt2{
+    font-size: 3.75rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:#E48D36;
+}
+.p404 .txt404 .txt3{
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color:#023F76;
+}
+.p404 .txt404 .txt4{
+    margin: 40px 0 0 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color:#023F76;
+}
+.p404 .txt404 .txt5{
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #E48D36;
+}
+.p404 .img404 img{
+    margin: -80px auto;
+}
+.p404 .txt6{
+    margin: 5px 0 0 0;
+    font-size: 0.813rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    color:#023F76;
+    text-align: center;
+}
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  FOOTER
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -1042,25 +1263,19 @@ footer {
     width: 100%;
     height: 260px;
 }
-
 .logoFooter {
-
     text-align: center;
     padding-top: 120px;
 }
-
 .redesSociales {
-
     text-align: center;
     margin-top: 20px;
 }
-
 .redesSociales img {
     width: 1.5%;
     margin-right: 20px;
     margin-left: 20px;
 }
-
 .txtFinal {
     text-align: center;
     color: #ffffff;
@@ -1069,31 +1284,11 @@ footer {
     font-weight: 300;
     margin: 20px 0 0 -30px;
 }
-
-.redesSociales .facebook:hover {
+.redesSociales .facebook:hover, .twitter:hover, .instagram:hover, .instagram:hover, .telegram:hover {
     cursor: pointer;
     transform: scale(1.15);
     transition: 0.3s all;
 }
-
-.redesSociales .twitter:hover {
-    cursor: pointer;
-    transform: scale(1.15);
-    transition: 0.3s all;
-}
-
-.redesSociales .instagram:hover {
-    cursor: pointer;
-    transform: scale(1.15);
-    transition: 0.3s all;
-}
-
-.redesSociales .telegram:hover {
-    cursor: pointer;
-    transform: scale(1.15);
-    transition: 0.3s all;
-}
-
 .conocenos {
     float: left;
     margin-top: 55px;
@@ -1104,111 +1299,75 @@ footer {
     text-decoration: none;
     color: #ffffff;
 }
-
-.conocenos p {
+.conocenos p, .listaConocenos  {
     font-size: 1.5rem;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     padding-bottom: 20px;
 }
-
 .conocenos .listaConocenos {
     font-size: 0.813rem;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 22px;
 }
-
 .dudas {
     float: right;
     text-align: center;
     margin-top: 50px;
     margin-right: 100px;
 }
-
 .dudas li, a{
     text-decoration: none;
     color: #ffffff;
 }
-.dudas p {
+.dudas p, .listaDudas  {
     font-size: 1.5rem;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     padding-bottom: 15px;
 }
-
 .dudas .listaDudas {
     font-size: 0.813rem;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 25px;
 }
-.dudas li:hover{
+.dudas li:hover , .conocenos a:hover{
     color:#E48D36;
 }
-.conocenos a:hover{
-    color: #E48D36;
-
-}
-
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 //  QUERIES
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
-
 @media screen and (max-width: 1200px) {
     .txtBanner {
         margin-top: -60px;
     }
-
     .txtBanner2 {
         margin-top: -60px;
     }
-
-    .cardP1 {
+    .cardP1, .cardP2, .cardP3 {
         position: absolute;
         top: 240px;
-    }
-
-    .cardP2 {
-        position: absolute;
-        top: 240px;
-    }
-
-    .cardP3 {
-        position: absolute;
-        top: 240px;
-    }
-    
+    }    
     .formulario {
         margin-top: -220px;
     }
-
+    .bannerAventuras {
+        margin: -450px 0 0 0;
+    }
     .nuevasAventuras .cardAventuras {
         margin: -80px 0 0 -20px;
     }
-
     .textAventuras {
         margin: -90px 0 0 -20px;
     }
-
     .nuevasAventuras .grupoCard3 {
         display: none;
     }
-
-    .App .fondoApp {
-
-        margin-left: -500px;
-    }
-
     .App {
         height: 700px;
     }
-
 }
 @media screen and (max-width: 940px) {
     .txtBanner {
@@ -1220,31 +1379,27 @@ footer {
     .banner{
         height: 720px;
     }
-    .cardP1 {
+    .cardP1, .cardP2, .cardP3 {
         position: absolute;
         top: 240px;
         left: 100px;
     }
-
-    .cardP2 {
-        position: absolute;
-        top: 240px;
+    .cardP2 { 
         left: 300px;
     }
-
     .cardP3 {
-        position: absolute;
-        top: 240px;
         left: 500px;
     }
     .formulario {
+        scale: 95%;
         position: relative;
-        top: 10px;
+        top: 40px;
     }
+   
     .cajaDia{
         width: 500px;
         height: 190px;
- 
+
     }
     .cajaDia img{
         margin: -250px 0 0 0;
@@ -1253,12 +1408,11 @@ footer {
         margin: 60px 0 0 0;
     }
     .nuevasAventuras {
-        
         width: 100%;
         height: 400px;
     }
-    
     .bannerAventuras {
+        margin: -250px 0 0 0;
         height: 900px;
     }
     .cardAventuras {
@@ -1266,10 +1420,8 @@ footer {
         left: 250px;
     }
     .textAventuras {
-        
         margin: 150px auto auto -112px;
     }
-
     .textAventuras .txt1Aventuras {
         font-size: 1.438rem;
     }
@@ -1281,26 +1433,28 @@ footer {
     }
     .App{ 
         height: 540px;
-
-    }
-    .App .fondoApp {
-        width: 200%;
     }
     .cajaApp .mockup {
         width: 336px;
         height: 432px;
         margin: 100px 0 0 0px;
-    
     }
     .cajaTxtApp  {
         top: -50px;
         left: 480px;
     }
-
     .App .btnStore {
         left: 480px;
         top: -20px;
     }
-
-
+    footer{
+        height: 180px;
+    }
+    footer .logoFooter, .dudas, .conocenos{
+        scale: 80%;
+        margin: 0px 0 0px 20px;
+    }
+    footer .logoFooter{
+        padding-top: 30px;
+    }
 }

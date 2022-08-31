@@ -6,7 +6,6 @@
     <meta charset="UTF-16">
     <title>MiViaje.com</title>
     <link rel="shortcut icon" href="Image/favicon.png">
-    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +14,21 @@
 
 <body>
     <header>
-        <div class="menu">
+        <div>
             <h1 class="logo"><a title="logoInicio" href="Index.html">
                     <img id="logo" src="Image/logoNaranja.svg" alt="logoInicio"></a></h1>
             <nav>
-                <ul>
-                    <li><a href="index.html" style="color:#E48D36">Home</li></a>
-                    <li><a href="destinos.html">Destinos</li></a>
-                    <li><a href="404.html">MiReserva</li></a>
-                    <li><a href="404.html">Contactenos</li></a>
+                <a href="index.html" style="color:#E48D36">Home</a>
+                <a href="destinos.html">Destinos</a>
+                <a href="404.html">MiReserva</a>
+                <a href="404.html">Contactenos</a>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div>
-
-        </div>
         <p class="txtBanner">VIAJA, VIVE, EXISTE</p>
         <p class="txtBanner2"><a href="destinos.html">Destinos Populares</p></a>
-
         <div class="cardpos">
             <section class="cardP1"><a href="destinos.html">
                     <section class="card1">
@@ -63,7 +57,7 @@
                         <p>Desde $20.000 la noche</p>
                     </section>
             </section></a>
-            <section class="container">
+            <section class="cajaBanner">
                 <img class="banner" src="Image/Banner1.jpg">
             </section>
         </div>
@@ -75,15 +69,15 @@
                     </section>
                     <section class="datosCiudad">
                         <p>Ciudad</p>
-                        <select class="select1" style="width: 147px;">
-                            <option value="opcion 1">BARICHARA</option>
-                            <option value="opcion 2" selected>BARRANQUILLA</option>
-                            <option value="opcion 3">BOGOTÁ</option>
-                            <option value="opcion 4">CALÍ</option>
-                            <option value="opcion 5">CARTAGENA</option>
-                            <option value="opcion 6">SAN ANDRES</option>
-                            <option value="opcion 7">SANTA MARTA</option>
-                            <option value="opcion 8">LETICIA</option>
+                        <select id="ciudad" name="ciudad" class="select1" style="width: 147px;">
+                            <option value="BARICHARA">BARICHARA</option>
+                            <option value="BARRANQUILLA" selected>BARRANQUILLA</option>
+                            <option value="BOGOTA">BOGOTÁ</option>
+                            <option value="CALI">CALÍ</option>
+                            <option value="CARTAGENA">CARTAGENA</option>
+                            <option value="SAN ANDRES">SAN ANDRES</option>
+                            <option value="SANTA MARTA">SANTA MARTA</option>
+                            <option value="LETICIA">LETICIA</option>
                         </select>
                     </section>
 
@@ -92,16 +86,16 @@
                     <section class="imgCalendarioIN"><img src="Image/Vectorcalendario.svg"></section>
                     <section class="datosCheckIN">
                         <p>Check In</p>
-                        <input class="cajaIn" type="date" max="2023-05-01" 
-                            style="width: 100px;" onkeydown="return false">
+                        <input class="cajaIn" type="date" max="2023-05-01" style="width: 100px;"
+                            onkeydown="return false">
                     </section>
                 </div>
                 <div class="checkOut">
                     <section class="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></section>
-                    <section class="datosCheckOut" >
+                    <section class="datosCheckOut">
                         <p>Check Out</p>
-                        <input class="cajaOut" type="date"  max="2023-05-01" 
-                            style="width: 100px;" onkeydown="return false">
+                        <input class="cajaOut" type="date" max="2023-05-01" style="width: 100px;"
+                            onkeydown="return false">
                     </section>
                 </div>
                 <div class="huespedes">
@@ -114,10 +108,6 @@
                             <option value="opcion 2" selected>2 Adultos</option>
                             <option value="opcion 3">3 Adultos</option>
                             <option value="opcion 4">4 Adultos</option>
-                            <option value="opcion 5">5 Adultos</option>
-                            <option value="opcion 6">6 Adultos</option>
-                            <option value="opcion 7">7 Adultos</option>
-
                         </select>
                     </section>
 
@@ -131,9 +121,10 @@
                         </select>
                     </section>
                 </div>
-                <div class="buscar"> <a href="destinos.html">
-                        <div class="imgbuscar"><img src="Image/lupa.svg"></div>
-                </div></a>
+                <div class="buscar">
+                    <div type="submit" id="btnBuscar" onclick="funcionBuscar()" class="imgbuscar"><img
+                            src="Image/lupa.svg"></div>
+                </div>
             </section>
             <!--   TAL VEZ SE INTEGRE...
                     <div class="habitaciones" name="habitaciones" style="width: 5px;">
@@ -146,6 +137,7 @@
                         </select>
                     </div> -->
         </form>
+
 
 
         <div class="recoDia">
@@ -265,23 +257,37 @@
         <div class="conocenos">
             <p>Conócenos</p>
             <ul class="listaConocenos">
-                <a href="404.html"><li>¿Qué es MiViaje.com?</li></a> 
-                <a href="404.html"><li>Privacidad</li></a> 
-                <a href="404.html"><li>Términos</li></a> 
-                <a href="404.html"> <li> Mapa del sitio</li></a> 
-                <a href="404.html"><li> Datos de la empresa</li></a> 
+                <a href="404.html">
+                    <li>¿Qué es MiViaje.com?</li>
+                </a>
+                <a href="404.html">
+                    <li>Privacidad</li>
+                </a>
+                <a href="404.html">
+                    <li>Términos</li>
+                </a>
+                <a href="404.html">
+                    <li> Mapa del sitio</li>
+                </a>
+                <a href="404.html">
+                    <li> Datos de la empresa</li>
+                </a>
             </ul>
 
         </div>
         <div class="dudas">
             <p>¿Dudas?<br>
                 Encuéntranos</p>
-                <ul class="listaDudas">
-                    <a href="404.html"><li>Centro de ayuda</li></a>
-                    <a href="404.html"><li>Reversión de Pagos</li></a>
-                    <li>(xxx) xxx xxxx xx</li>
-                    <li>info@miviaje.com</li>
-                </ul>
+            <ul class="listaDudas">
+                <a href="404.html">
+                    <li>Centro de ayuda</li>
+                </a>
+                <a href="404.html">
+                    <li>Reversión de Pagos</li>
+                </a>
+                <li>(xxx) xxx xxxx xx</li>
+                <li>info@miviaje.com</li>
+            </ul>
 
         </div>
 
@@ -299,6 +305,7 @@
         <p class="txtFinal">Copyright - Miviaje.com - 2022</p>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
