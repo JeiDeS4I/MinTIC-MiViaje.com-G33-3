@@ -1,4 +1,17 @@
 @use '../custom' as *;
-body {
-    background-color: $primary;
+.icono {
+    @include media-breakpoint-up(md) {
+        margin-right: 35rem;
+    }
+}
+
+.navegacion {
+    a {
+        color: $primary;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .seleccionado {
+        color: $secondary;
+    }
 }

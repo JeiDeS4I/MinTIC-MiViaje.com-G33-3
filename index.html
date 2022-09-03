@@ -10,26 +10,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1 class="logo">
-                <a title="logoInicio" href="Index.html">
+    <header class="container-xl py-3">
+        <div class=" header navbar navbar-expand-lg container navbar-light">
+
+            <div class="icono">
+                <a class="nombre-sitio navbar-brand " href="index.html">
                     <img id="logo" src="Image/logoNaranja.svg" alt="logoInicio">
                 </a>
-            </h1>
-            <nav>
-                <a href="index.html" style="color:#E48D36">Home</a>
-                <a href="destinos.html">Destinos</a>
-                <a href="404.html">MiReserva</a>
-                <a href="404.html">Contactenos</a>
-                </ul>
-            </nav>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+
+            <div id="navegacion" class="collapse navbar-collapse">
+                <nav class="navbar-nav container d-flex flex-lg-row justify-content-md-between text-center navegacion">
+                    <a class=" text-decoration-none seleccionado" href="index.html">Home</a>
+                    <a class=" text-decoration-none" href="destinos.html">Destinos</a>
+                    <a class=" text-decoration-none" href="404.html">MiReserva</a>
+                    <a class=" text-decoration-none" href="404.html">Contactenos</a>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
     </header>
+
     <main>
         <p class="txtBanner">VIAJA, VIVE, EXISTE</p>
         <p class="txtBanner2"><a href="destinos.html">Destinos Populares</p></a>
@@ -313,13 +325,17 @@
             <a href="404.html"><img src="Image/Instagram.png" class="instagram"></a>
             <a href="404.html"><img src="Image/Facebook.png" class="facebook"></a>
             <a href="404.html"><img src="Image/Telegram.png" class="telegram"></a>
-            <a href="404.html"><img src="Image/Twitter.png" class="twitter"></a>
+            <a href="04.html"><img src="Image/Twitter.png" class="twitter"></a>
 
 
         </div>
         <p class="txtFinal">Copyright - Miviaje.com - 2022</p>
 
-    </footer>
+    </footer>y
+
+
+
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script.js"></script>
