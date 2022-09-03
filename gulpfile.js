@@ -1,21 +1,38 @@
 const { src, dest, watch, series } = require('gulp');
+const plumber = require('gulp-plumber');
 
 /* -------------------------------------------------- */
 /*                  Compilar CSS 
 /* -------------------------------------------------- */
 const sass = require('gulp-sass')(require('sass'));
+const purgecss = require('gulp-purgecss');
+const rename = require('gulp-rename');
 
 
 function css(done) {
     src('src/scss/**/*.scss')
+        .pipe(plumber())
         .pipe(sass())
         .pipe(dest('build/css'))
 
     done();
 }
 
+function cssbuild(done) {
+    src('build/css/app.css')
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(purgecss({
+            content: ['index.html']
+        }))
+        .pipe(dest('build/css'))
+    done();
+}
+
 function dev() {
     watch('src/scss/**/*.scss', css);
+    watch('src/scss/**/*.scss', cssbuild);
 
 }
 
