@@ -8,6 +8,10 @@ const sass = require('gulp-sass')(require('sass'));
 const purgecss = require('gulp-purgecss');
 const rename = require('gulp-rename');
 
+/* -------------------------------------------------- */
+/*                  Compilar Imagenes
+/* -------------------------------------------------- */
+const imagemin = require('gulp-imagemin');
 
 function css(done) {
     src('src/scss/**/*.scss')
@@ -30,6 +34,13 @@ function cssbuild(done) {
     done();
 }
 
+function imagenes(done) {
+    src('src/Image/**/*')
+        .pipe(imagemin({ optimizationLevel: 3 }))
+        .pipe(dest('build/img'))
+    done();
+}
+
 function dev() {
     watch('src/scss/**/*.scss', css);
     watch('src/scss/**/*.scss', cssbuild);
@@ -38,3 +49,5 @@ function dev() {
 
 exports.css = css;
 exports.dev = dev;
+exports.imagenes = imagenes;
+exports.default = series(imagenes, dev);

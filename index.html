@@ -20,7 +20,7 @@
 
             <div class="icono">
                 <a class="nombre-sitio navbar-brand " href="index.html">
-                    <img id="logo" src="Image/logoNaranja.svg" alt="logoInicio">
+                    <img id="logo" src="build/img/logoNaranja.svg" alt="logoInicio">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
@@ -42,272 +42,269 @@
         </div>
     </header>
 
-    <main>
-        <p class="txtBanner">VIAJA, VIVE, EXISTE</p>
-        <p class="txtBanner2"><a href="destinos.html">Destinos Populares</p></a>
-            <div class="cardpos">
-                <section class="cardP1">
-                    <a href="destinos.html">
-                        <section class="card1">
-                            <img class="destinop1" src="Image/bogota.jpg">
-                        </section>
-                        <div class="txtCard1">
-                            <h4><b>Viaja a Bogotá</b></h4>
-                            <p>Desde $50.000 la noche</p>
+    <section class=" d-none d-md-block banner">
+        <div class="contenido-banner">
+            <p class="titulo text-primary fw-bold text-uppercase m-0">viaja,vive,existe</p>
+            <a href="destinos.html" class="text-primary text-capitalize m-0 texto__banner text-decoration-none ">destinos populares</a>
+            <div class=" d-flex">
+                <a href="#" class="tarjeta me-4 p-3 text-decoration-none mt-5 ">
+                    <div class="contenido__tarjeta ">
+                        <div>
+                            <img src="build/img/bogota.jpg " alt="bogota ">
                         </div>
-                </section>
+                        <p class="destino fw-bold mt-2">Viaja a Bogotá</p>
+                        <p class="precio ">desde $50.000 la noche</p>
+                    </div>
                 </a>
-                <section class="cardP2">
-                    <a href="destinos.html">
-                        <section class="card2">
-                            <img class="destinop2" src="Image/medellin.jpg">
-                        </section>
-                        <section class="txtCard1">
-                            <h4><b>Viaja a Medellin</b></h4>
-                            <p>Desde $42.000 la noche</p>
-                        </section>
-                </section>
+                <a href="# " class="tarjeta p-3  me-4 text-decoration-none my-5 ">
+                    <div class="contenido__tarjeta pb-3 ">
+                        <div>
+                            <img src="build/img/medellin.jpg " alt="bogota ">
+                        </div>
+                        <p class="destino fw-bold mt-2">Viaja a Medellin</p>
+                        <p class="precio ">desde $42.000 la noche</p>
+                    </div>
                 </a>
-                <section class="cardP3">
-                    <a href="destinos.html">
-                        <section class="card3">
-                            <img class="destinop3" src="Image/Cartagena.png">
-                        </section>
-                        <section class="txtCard1">
-                            <h4><b>Viaja a Cartagena</b></h4>
-                            <p>Desde $20.000 la noche</p>
-                        </section>
-                </section>
+                <a href="# " class="tarjeta p-3   me-4 text-decoration-none mt-5 ">
+                    <div class="contenido__tarjeta ">
+                        <div>
+                            <img src="build/img/Cartagena.png " alt="bogota ">
+                        </div>
+                        <p class="destino fw-bold mt-2">Viaja a Cartagena</p>
+                        <p class="precio ">desde $20.000 la noche</p>
+                    </div>
                 </a>
-                <section class="cajaBanner">
-                    <img class="banner" src="Image/Banner1.jpg">
+            </div>
+
+        </div>
+    </section>
+    <!--
+    <form class="formulario ">
+        <section class="cajaPrincipal ">
+            <section class="ciudad ">
+                <section class="imgCiudad ">
+                    <img src="Image/VectoricoCiudad.svg ">
+                </section>
+                <section class="datosCiudad ">
+                    <p>Ciudad</p>
+                    <select id="ciudad " name="ciudad " class="select1 " style="width: 147px; ">
+                            <option value="BARICHARA ">BARICHARA</option>
+                            <option value="BARRANQUILLA " selected>BARRANQUILLA</option>
+                            <option value="BOGOTA ">BOGOTÁ</option>
+                            <option value="CALI ">CALÍ</option>
+                            <option value="CARTAGENA ">CARTAGENA</option>
+                            <option value="SAN ANDRES ">SAN ANDRES</option>
+                            <option value="SANTA MARTA ">SANTA MARTA</option>
+                            <option value="LETICIA ">LETICIA</option>
+                        </select>
+                </section>
+
+            </section>
+            <div class="checkIn ">
+                <section class="imgCalendarioIN "><img src="Image/Vectorcalendario.svg "></section>
+                <section class="datosCheckIN ">
+                    <p>Check In</p>
+                    <input class="cajaIn " type="date " max="2023-05-01 " style="width: 100px; " onkeydown="return false ">
                 </section>
             </div>
-            <form class="formulario">
-                <section class="cajaPrincipal">
-                    <section class="ciudad">
-                        <section class="imgCiudad">
-                            <img src="Image/VectoricoCiudad.svg">
-                        </section>
-                        <section class="datosCiudad">
-                            <p>Ciudad</p>
-                            <select id="ciudad" name="ciudad" class="select1" style="width: 147px;">
-                            <option value="BARICHARA">BARICHARA</option>
-                            <option value="BARRANQUILLA" selected>BARRANQUILLA</option>
-                            <option value="BOGOTA">BOGOTÁ</option>
-                            <option value="CALI">CALÍ</option>
-                            <option value="CARTAGENA">CARTAGENA</option>
-                            <option value="SAN ANDRES">SAN ANDRES</option>
-                            <option value="SANTA MARTA">SANTA MARTA</option>
-                            <option value="LETICIA">LETICIA</option>
-                        </select>
-                        </section>
-
-                    </section>
-                    <div class="checkIn">
-                        <section class="imgCalendarioIN"><img src="Image/Vectorcalendario.svg"></section>
-                        <section class="datosCheckIN">
-                            <p>Check In</p>
-                            <input class="cajaIn" type="date" max="2023-05-01" style="width: 100px;" onkeydown="return false">
-                        </section>
-                    </div>
-                    <div class="checkOut">
-                        <section class="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></section>
-                        <section class="datosCheckOut">
-                            <p>Check Out</p>
-                            <input class="cajaOut" type="date" max="2023-05-01" style="width: 100px;" onkeydown="return false">
-                        </section>
-                    </div>
-                    <div class="huespedes">
-                        <section class="imgHuespedes"><img src="Image/icoHuesped.svg ">
-                        </section>
-                        <section class="datosHuespedes">
-                            <p>Huespedes</p>
-                            <select class="select2">
-                            <option value="opcion 1">1 Adulto</option>
-                            <option value="opcion 2" selected>2 Adultos</option>
-                            <option value="opcion 3">3 Adultos</option>
-                            <option value="opcion 4">4 Adultos</option>
-                        </select>
-                        </section>
-
-                        <section>
-                            <img class="img3H" src="Image/VectoricoCiudad.svg">
-                            <select class="select3" style="width: 80px;">
-                            <option value="opcion 0">1 hab</option>
-                            <option value="opcion 1">2 hab</option>
-                            <option value="opcion 2">3 hab</option>
-                            <option value="opcion 3">4 hab</option>
-                        </select>
-                        </section>
-                    </div>
-                    <div class="buscar">
-                        <div type="submit" id="btnBuscar" onclick="funcionBuscar()" class="imgbuscar"><img src="Image/lupa.svg"></div>
-                    </div>
+            <div class="checkOut ">
+                <section class="imgCalendarioOut "><img src="Image/Vectorcalendario.svg "></section>
+                <section class="datosCheckOut ">
+                    <p>Check Out</p>
+                    <input class="cajaOut " type="date " max="2023-05-01 " style="width: 100px; " onkeydown="return false ">
                 </section>
-                <!--   TAL VEZ SE INTEGRE...
-                    <div class="habitaciones" name="habitaciones" style="width: 5px;">
-                        <label>Habitaciones</label>
-                        <select class = "select4">
-                            <option value="opcion 1">1 Habitacion</option>
-                            <option value="opcion 2">2 Habitaciones</option>
-                            <option value="opcion 3">3 Habitaciones</option>
-                            <option value="opcion 4">4 Habitaciones</option> 
-                        </select>
-                    </div> -->
-            </form>
-
-
-
-            <div class="recoDia">
-                <section class="cajaDia">
-                    <img src="Image/Barichara.jpg">
-                </section>
-
-                <div class="cajaText">
-                    <p class="txtRD">RECOMENDADO DEL DIA</p>
-                    <p class="txtRD2" style="color: #E48D36">BARICHARA</p>
-                    <section class="estrellas">
-                        <img src="Image/Estrella.svg">
-                        <img src="Image/Estrella.svg">
-                        <img src="Image/Estrella.svg">
-                        <img src="Image/Estrella.svg">
-                        <img src="Image/Estrella.svg">
-                    </section>
-                    <section class="check"><img src="Image/Check.svg"></section>
-                    <section class="check2"><img src="Image/Check.svg"></section>
-                    <div class="desc">
-                        <p class="text1">3 DIAS (2 NOCHES)</p>
-                        <p class="text2">DESAYUNO INCLUIDO</p>
-                        <p class="text3">Disfruta de un rico desayuno americano o buffet<br> ilimitado.</p>
-                        <p class="text4">CENA ROMANTICA</p>
-                        <p class="text5">Hemos seleccionado los mejores guías turísticos <br>para que recorras todo el centro histórico</p>
-                        <p class="text6">
-                            <span style="font-size: 0.938rem;">$</span>
-                            <span style="font-size: 2.5rem;">400.000</span>
-                            <span style="font-size: 0.938rem;" style="font-family: poppinsRegular;">c/u</span>
-                        </p>
-                        <a href="destinos.html">
-                            <section class="btnRecomendadoDia">
-                                <p class=txtbtn>RESERVA AHORA!</p>
-                            </section>
-                        </a>
-                    </div>
-                </div>
             </div>
-            <div>
-                <div class="nuevasAventuras">
-                    <section><img class="bannerAventuras" src="Image/Valle.jpg"></section>
-                    <div class="cardAventuras">
-                        <section class="grupoCard1">
-                            <section class="cardP1NA">
-                                <a href="destinos.html">
-                                    <section class="card1NA">
-                                        <img class="destinop1" src="Image/Cabañas.jpg">
-                                    </section>
+            <div class="huespedes ">
+                <section class="imgHuespedes "><img src="Image/icoHuesped.svg ">
+                </section>
+                <section class="datosHuespedes ">
+                    <p>Huespedes</p>
+                    <select class="select2 ">
+                            <option value="opcion 1 ">1 Adulto</option>
+                            <option value="opcion 2 " selected>2 Adultos</option>
+                            <option value="opcion 3 ">3 Adultos</option>
+                            <option value="opcion 4 ">4 Adultos</option>
+                        </select>
+                </section>
+
+                <section>
+                    <img class="img3H " src="Image/VectoricoCiudad.svg ">
+                    <select class="select3 " style="width: 80px; ">
+                            <option value="opcion 0 ">1 hab</option>
+                            <option value="opcion 1 ">2 hab</option>
+                            <option value="opcion 2 ">3 hab</option>
+                            <option value="opcion 3 ">4 hab</option>
+                        </select>
+                </section>
+            </div>
+            <div class="buscar ">
+                <div type="submit " id="btnBuscar " onclick="funcionBuscar() " class="imgbuscar "><img src="Image/lupa.svg "></div>
+            </div>
+        </section>
+        TAL VEZ SE INTEGRE...
+        <div class="habitaciones " name="habitaciones " style="width: 5px; ">
+            <label>Habitaciones</label>
+            <select class="select4 ">
+                            <option value="opcion 1 ">1 Habitacion</option>
+                            <option value="opcion 2 ">2 Habitaciones</option>
+                            <option value="opcion 3 ">3 Habitaciones</option>
+                            <option value="opcion 4 ">4 Habitaciones</option> 
+                        </select>
+        </div>
+    </form>-->
+    <!-- </main> 
+
+     
+
+    <div class="recoDia ">
+        <section class="cajaDia ">
+            <img src="Image/Barichara.jpg ">
+        </section>
+
+        <div class="cajaText ">
+            <p class="txtRD ">RECOMENDADO DEL DIA</p>
+            <p class="txtRD2 " style="color: #E48D36 ">BARICHARA</p>
+            <section class="estrellas ">
+                <img src="Image/Estrella.svg ">
+                <img src="Image/Estrella.svg ">
+                <img src="Image/Estrella.svg ">
+                <img src="Image/Estrella.svg ">
+                <img src="Image/Estrella.svg ">
+            </section>
+            <section class="check "><img src="Image/Check.svg "></section>
+            <section class="check2 "><img src="Image/Check.svg "></section>
+            <div class="desc ">
+                <p class="text1 ">3 DIAS (2 NOCHES)</p>
+                <p class="text2 ">DESAYUNO INCLUIDO</p>
+                <p class="text3 ">Disfruta de un rico desayuno americano o buffet<br> ilimitado.</p>
+                <p class="text4 ">CENA ROMANTICA</p>
+                <p class="text5 ">Hemos seleccionado los mejores guías turísticos <br>para que recorras todo el centro histórico</p>
+                <p class="text6 ">
+                    <span style="font-size: 0.938rem; ">$</span>
+                    <span style="font-size: 2.5rem; ">400.000</span>
+                    <span style="font-size: 0.938rem; " style="font-family: poppinsRegular; ">c/u</span>
+                </p>
+                <a href="destinos.html ">
+                    <section class="btnRecomendadoDia ">
+                        <p class=txtbtn>RESERVA AHORA!</p>
+                    </section>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="nuevasAventuras ">
+            <section><img class="bannerAventuras " src="Image/Valle.jpg "></section>
+            <div class="cardAventuras ">
+                <section class="grupoCard1 ">
+                    <section class="cardP1NA ">
+                        <a href="destinos.html ">
+                            <section class="card1NA ">
+                                <img class="destinop1 " src="Image/Cabañas.jpg ">
                             </section>
-                            <section class="btnAventuras2">
-                                <p class=txtbtn>CABAÑAS / SAN ANDRES
-                                    <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px;">DESDE
+                    </section>
+                    <section class="btnAventuras2 ">
+                        <p class=txtbtn>CABAÑAS / SAN ANDRES
+                            <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px; ">DESDE
                                     250.000</span>
-                                </p>
-                            </section>
-                            </a>
-                        </section>
-                        <section class="grupoCard2">
-                            <section class="cardP2NA">
-                                <a href="destinos.html">
-                                    <section class="card2NA">
-                                        <img class="destinop2" src="Image/Glamping.jpg">
-                                    </section>
-                            </section>
-                            <section class="btnAventuras3">
-                                <p class=txtbtn>GLAMPING / BOGOTÁ
-                                    <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px;">DESDE
-                                    $150.000</span>
-                                </p>
-                            </section>
-                            </a>
-                        </section>
-                        <section class="grupoCard3">
-                            <section class="cardP3NA">
-                                <a href="destinos.html">
-                                    <section class="card3NA">
-                                        <img class="destinop3" src="Image/bungalows.jpg">
-                                    </section>
-                            </section>
-                            <section class="btnAventuras4">
-                                <p class=txtbtn>BUGALOWS / CARTAGENA
-                                    <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px;">DESDE
-                                    550.000</span>
-                                </p>
-                            </section>
-                        </section>
-                        </a>
-                    </div>
-                </div>
-                <div class="textAventuras">
-                    <p><span class="txt1Aventuras">EXPLORA NUEVAS</span><br>
-                        <span class="txt2Aventuras">AVENTURAS</span>
-                    </p>
-                    <a href="destinos.html">
-                        <section class="btnAventuras">
-                            <p class=txtbtn>PRUEBA ALGO NUEVO</p>
-                        </section>
-
-                    </a>
-                </div>
-
-            </div>
-            <div class="App" style="position: relative; left: 0; top: 0px;">
-                <img class="fondoApp" src="Image/Fondo.svg">
-                <div class="cajaApp">
-
-                    <img class="mockup" src="Image/Appmockup.png">
-                    <img class="btnStore" src="Image/btnStore.png">
-                    <section class="cajaTxtApp">
-                        <p class="textApp"><span class="txtApp1">PRÓXIMAMENTE<br> NUESTRA <span
-                                class="txtApp1-1">APP</span></span>
-                        </p> <br>
-                        <p class="textApp2"><span class="txtApp2">SI ERES UNO DE LOS PRIMEROS,</span><br>
-                            <span class="txtApp3">PODRAS OBTENER <span class="txtApp1-2">10%</span> DE DESCUENTO </span><br>
-                            <span class="txtApp4">EN TU PRIMERA RESERVA</span>
-                            <br><br><span class="txtApp5">MUY PRONTO VALIDO EN:</span>
                         </p>
                     </section>
-                </div>
+                    </a>
+                </section>
+                <section class="grupoCard2 ">
+                    <section class="cardP2NA ">
+                        <a href="destinos.html ">
+                            <section class="card2NA ">
+                                <img class="destinop2 " src="Image/Glamping.jpg ">
+                            </section>
+                    </section>
+                    <section class="btnAventuras3 ">
+                        <p class=txtbtn>GLAMPING / BOGOTÁ
+                            <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px; ">DESDE
+                                    $150.000</span>
+                        </p>
+                    </section>
+                    </a>
+                </section>
+                <section class="grupoCard3 ">
+                    <section class="cardP3NA ">
+                        <a href="destinos.html ">
+                            <section class="card3NA ">
+                                <img class="destinop3 " src="Image/bungalows.jpg ">
+                            </section>
+                    </section>
+                    <section class="btnAventuras4 ">
+                        <p class=txtbtn>BUGALOWS / CARTAGENA
+                            <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px; ">DESDE
+                                    550.000</span>
+                        </p>
+                    </section>
+                </section>
+                </a>
             </div>
-    </main>
+        </div>
+        <div class="textAventuras ">
+            <p><span class="txt1Aventuras ">EXPLORA NUEVAS</span><br>
+                <span class="txt2Aventuras ">AVENTURAS</span>
+            </p>
+            <a href="destinos.html ">
+                <section class="btnAventuras ">
+                    <p class=txtbtn>PRUEBA ALGO NUEVO</p>
+                </section>
+
+            </a>
+        </div>
+
+    </div>
+    <div class="App " style="position: relative; left: 0; top: 0px; ">
+        <img class="fondoApp " src="Image/Fondo.svg ">
+        <div class="cajaApp ">
+
+            <img class="mockup " src="Image/Appmockup.png ">
+            <img class="btnStore " src="Image/btnStore.png ">
+            <section class="cajaTxtApp ">
+                <p class="textApp "><span class="txtApp1 ">PRÓXIMAMENTE<br> NUESTRA <span
+                                class="txtApp1-1 ">APP</span></span>
+                </p> <br>
+                <p class="textApp2 "><span class="txtApp2 ">SI ERES UNO DE LOS PRIMEROS,</span><br>
+                    <span class="txtApp3 ">PODRAS OBTENER <span class="txtApp1-2 ">10%</span> DE DESCUENTO </span><br>
+                    <span class="txtApp4 ">EN TU PRIMERA RESERVA</span>
+                    <br><br><span class="txtApp5 ">MUY PRONTO VALIDO EN:</span>
+                </p>
+            </section>
+        </div>
+    </div>
+
     <footer>
-        <div class="conocenos">
+        <div class="conocenos ">
             <p>Conócenos</p>
-            <ul class="listaConocenos">
-                <a href="404.html">
+            <ul class="listaConocenos ">
+                <a href="404.html ">
                     <li>¿Qué es MiViaje.com?</li>
                 </a>
-                <a href="404.html">
+                <a href="404.html ">
                     <li>Privacidad</li>
                 </a>
-                <a href="404.html">
+                <a href="404.html ">
                     <li>Términos</li>
                 </a>
-                <a href="404.html">
+                <a href="404.html ">
                     <li> Mapa del sitio</li>
                 </a>
-                <a href="404.html">
+                <a href="404.html ">
                     <li> Datos de la empresa</li>
                 </a>
             </ul>
 
         </div>
-        <div class="dudas">
+        <div class="dudas ">
             <p>¿Dudas?<br> Encuéntranos
             </p>
-            <ul class="listaDudas">
-                <a href="404.html">
+            <ul class="listaDudas ">
+                <a href="404.html ">
                     <li>Centro de ayuda</li>
                 </a>
-                <a href="404.html">
+                <a href="404.html ">
                     <li>Reversión de Pagos</li>
                 </a>
                 <li>(xxx) xxx xxxx xx</li>
@@ -317,28 +314,28 @@
         </div>
 
         <h1 class=logoFooter>
-            <a title="logoFooter" href="Index.html">
-                <img id="logoFooter" src="Image/LogoBlanco.svg" alt="logoFooter"></a>
+            <a title="logoFooter " href="Index.html ">
+                <img id="logoFooter " src="Image/LogoBlanco.svg " alt="logoFooter "></a>
         </h1>
-        <div class="redesSociales">
+        <div class="redesSociales ">
 
-            <a href="404.html"><img src="Image/Instagram.png" class="instagram"></a>
-            <a href="404.html"><img src="Image/Facebook.png" class="facebook"></a>
-            <a href="404.html"><img src="Image/Telegram.png" class="telegram"></a>
-            <a href="04.html"><img src="Image/Twitter.png" class="twitter"></a>
+            <a href="404.html "><img src="Image/Instagram.png " class="instagram "></a>
+            <a href="404.html "><img src="Image/Facebook.png " class="facebook "></a>
+            <a href="404.html "><img src="Image/Telegram.png " class="telegram "></a>
+            <a href="404.html "><img src="Image/Twitter.png " class="twitter "></a>
 
 
         </div>
-        <p class="txtFinal">Copyright - Miviaje.com - 2022</p>
+        <p class="txtFinal ">Copyright - Miviaje.com - 2022</p>
 
-    </footer>y
+    </footer>-->
 
 
 
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
+    <script src="script.js "></script>
 </body>
 
 </html>
