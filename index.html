@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--  <link rel="stylesheet" href="styles/style.css"> -->
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
@@ -42,7 +43,7 @@
         </div>
     </header>
 
-    <section class="d-none d-md-block banner">
+    <section class="d-none d-lg-block banner">
         <div class="contenido-banner">
             <p class="titulo text-primary fw-bold text-uppercase m-0">viaja,vive,existe</p>
             <div class="d-flex flex-column">
@@ -81,29 +82,45 @@
         </div>
     </section>
 
-    <main class="container-xl mt-md-n3  mt-0 row justify-content-center mx-auto ">
-        <form class="row formulario col-md-8 py-2">
-            <div class="row col-md-11 col-12">
-                <div class="col-12 col-md-3">
-                    <select name="" id="" class="form-select"></select>
+    <main class="container-xl mt-lg-n3  mt-0 row justify-content-center mx-auto mb-5">
+        <form class="row formulario col-lg-9 py-2 px-1">
+            <div class="row col-lg-11 col-12">
+                <div class="col-12 col-lg-3 d-flex align-items-center border rounded-4 border-secondary ciudad mb-2 ">
+                    <label for="ciudad " class="input-group-text border p-0 me-1 border-0 text-secondary bg-white">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </label>
+                    <div class="flex-grow-1 d-flex flex-column">
+                        <p class="text-primary m-0">Ciudad</p>
+                        <select id="ciudad " name="ciudad " class="p-0 fw-bold text-primary border-0 bg-transparent">
+                            <option value="" selected disabled>--DESTINO--</option>
+                            <option value="BARICHARA">BARICHARA</option>
+                            <option value="BARRANQUILLA">BARRANQUILLA</option>
+                            <option value="BOGOTA">BOGOTÁ</option>
+                            <option value="CALI">CALÍ</option>
+                            <option value="CARTAGENA">CARTAGENA</option>
+                            <option value="SAN ANDRES">SAN ANDRES</option>
+                            <option value="SANTA MARTA">SANTA MARTA</option>
+                            <option value="LETICIA">LETICIA</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 ">
-                    <input type="date" name="" id="" class="form-control">
+                <div class="col-6 col-lg-3">
+                    <input type="date " id=" " class="form-control fechainicio " name=" " placeholder="Fecha de inicio">
                 </div>
-                <div class="col-6 col-md-3">
-                    <input type="date" name="" id="" class="form-control">
+                <div class="col-6 col-lg-3">
+                    <input type="date " name=" " id=" " class="form-control fechafinal " placeholder="Fecha de Final">
                 </div>
-                <div class="col-8 col-md-3">
-                    <input type="number" name="" id="" class="w-100 form-control">
+                <div class="col-8 col-lg-3">
+                    <input type="number " name=" " id=" " class="w-100 form-control">
                 </div>
 
-                <div class="col-4 col-md-1 text-center  d-inline-block d-md-none">
-                    <input type="submit" value="Buscar" class="form-control d-inline-block d-md-none btn btn-secondary text-white">
+                <div class="col-4 col-lg-1 text-center d-inline-block d-lg-none">
+                    <input type="submit " value="Buscar " class="form-control d-inline-block d-lg-none btn btn-secondary text-white">
                 </div>
             </div>
 
-            <div class="col-md-1">
-                <a type="submit" class="form-control pe-md-2 px-lg-0 d-none d-md-inline-block text-white btn btn-secondary"> <i class="bi bi-search"></i> </a>
+            <div class="col-lg-1">
+                <a type="submit " class="form-control pe-lg-2 px-lg-0 d-none d-lg-inline-block text-white btn btn-secondary"> <i class="bi bi-search"></i> </a>
             </div>
         </form>
 
