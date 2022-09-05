@@ -22,6 +22,13 @@ function css(done) {
     done();
 }
 
+function js(done) {
+    src('src/js/app.js')
+        .pipe(dest('build/js'))
+
+    done();
+}
+
 function cssbuild(done) {
     src('build/css/app.css')
         .pipe(rename({
@@ -44,10 +51,12 @@ function imagenes(done) {
 function dev() {
     watch('src/scss/**/*.scss', css);
     watch('src/scss/**/*.scss', cssbuild);
+    watch('src/js/app.js', js)
 
 }
 
 exports.css = css;
 exports.dev = dev;
+exports.js = js;
 exports.imagenes = imagenes;
-exports.default = series(imagenes, dev);
+exports.default = series(imagenes, js, dev);
