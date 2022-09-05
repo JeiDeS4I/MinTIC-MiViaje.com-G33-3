@@ -7,11 +7,8 @@
     box-shadow: -4px 14px 32px -18px rgba(0, 0, 0, 0.77);
     select,
     input {
-        display: inline-block;
         font-size: 1.2rem;
         padding: 2rem 0;
-        appearance: none;
-        text-align: start;
     }
     input::placeholder {
         color: $primary;
@@ -30,5 +27,8 @@
     }
     p {
         font-size: 1.2rem;
+    }
+    .btn-enviar {
+        padding: .8rem 0;
     }
 }
