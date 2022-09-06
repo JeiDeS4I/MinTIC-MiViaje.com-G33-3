@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use 'base/mixins' as m;
 .formulario {
     background-color: #F9F7F7;
     border-radius: 1rem;
@@ -33,5 +34,6 @@
     }
     .btn-enviar {
         padding: .8rem 0;
+        @include m.efecto;
     }
 }

@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use 'base/mixins' as m;
 .recodia {
     .puntuacion {
         i {
@@ -31,4 +32,12 @@
             top: -1rem;
         }
     }
+    .btn__recomendado {
+        font-size: 1.3rem;
+        @include m.efecto;
+    }
+}
+
+.img__recomendado {
+    @include m.efecto;
 }

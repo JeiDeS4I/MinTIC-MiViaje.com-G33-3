@@ -1,0 +1,6 @@
+@mixin efecto {
+    &:hover {
+        transition: 0.5s all;
+        transform: scale(1.03);
+    }
+}
