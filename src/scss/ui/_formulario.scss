@@ -7,13 +7,16 @@
     box-shadow: -4px 14px 32px -18px rgba(0, 0, 0, 0.77);
     select,
     input {
-        font-size: 1.2rem;
+        font-size: .8rem;
         padding: 2rem 0;
+        @include media-breakpoint-up(sm) {
+            font-size: 1.2rem;
+        }
     }
     input::placeholder {
         color: $primary;
         font-weight: normal;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .ciudad,
     .fecha {

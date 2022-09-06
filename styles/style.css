@@ -722,16 +722,6 @@ nav a:hover {
     letter-spacing: -2px;
 }
 
-.btnRecomendadoDia {
-    background: #E48D36;
-    width: 200px;
-    height: 50px;
-    position: relative;
-    margin: -50px 0 0 220px;
-    border-radius: 7px;
-    cursor: pointer;
-}
-
 .btnRecomendadoDia .txtbtn {
     font-size: 0.938rem;
     color: #ffffff;

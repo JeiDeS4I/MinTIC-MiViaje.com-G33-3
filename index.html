@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!--  <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
-    <header class="container-xl py-1">
+    <header class="container-xl p-0 py-lg-1">
         <div class=" header navbar navbar-expand-lg container navbar-light">
 
             <div class="icono">
@@ -82,8 +82,8 @@
         </div>
     </section>
 
-    <main class="container-xl mt-lg-n3  mt-0 row justify-content-center mx-auto mb-5">
-        <form class="row formulario col-lg-9 py-2 px-1">
+    <main class="container-xl mt-lg-n3  mt-0 row justify-content-center mx-auto mb-3">
+        <form class="row formulario col-lg-9 py-2 px-1 mb-lg-0 mb-1">
             <div class="row col-lg-11 col-12">
                 <div class="col-12 col-lg-3 d-flex align-items-center border rounded-4 border-secondary ciudad mb-2 mb-lg-0">
                     <label for="ciudad" class="input-group-text p-0 mx-1 border-0 text-secondary bg-transparent">
@@ -116,13 +116,13 @@
                     </div>
                 </div>
 
-                <div class="col col-lg-3 d-flex align-items-center fecha border rounded-4 border-secondary mb-2 mb-lg-0 ms-1">
+                <div class="col-5 col-lg-3 d-flex align-items-center fecha border rounded-4 border-secondary mb-2 mb-lg-0 ms-1">
                     <label for="fechafinal" class="input-group-text border-0 p-0 mx-1 order-0 text-secondary bg-transparent">
                         <i class="bi bi-calendar2-event"></i>
                     </label>
                     <div class="flex-grow-1 d-flex flex-column">
                         <p class="text-primary m-0">Check Out</p>
-                        <input type="date" id="fechafinal" class="form-control border-0 text-primary p-0 fw-bold bg-transparent" name=" " placeholder="Fecha Final">
+                        <input type="date" id="fechafinal" class=" border-0 text-primary p-0 fw-bold bg-transparent" name=" " placeholder="Fecha Final">
                     </div>
                 </div>
 
@@ -141,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="col-lg">
+            <div class="col-lg animate__animated animate__bounce animate__delay-2">
                 <a type="submit" class="btn-enviar border rounded-4 border-secondary d-none d-lg-flex justify-content-lg-center text-white btn btn-secondary">
                     <i class="bi bi-search"></i>
                 </a>
@@ -151,43 +151,52 @@
     </main>
 
 
-    <!-- 
-    <div class="recoDia">
-        <section class="cajaDia ">
-            <img src="Image/Barichara.jpg ">
-        </section>
 
-        <div class="cajaText ">
-            <p class="txtRD ">RECOMENDADO DEL DIA</p>
-            <p class="txtRD2 " style="color: #E48D36 ">BARICHARA</p>
-            <section class="estrellas ">
-                <img src="Image/Estrella.svg ">
-                <img src="Image/Estrella.svg ">
-                <img src="Image/Estrella.svg ">
-                <img src="Image/Estrella.svg ">
-                <img src="Image/Estrella.svg ">
-            </section>
-            <section class="check "><img src="Image/Check.svg "></section>
-            <section class="check2 "><img src="Image/Check.svg "></section>
-            <div class="desc ">
-                <p class="text1 ">3 DIAS (2 NOCHES)</p>
-                <p class="text2 ">DESAYUNO INCLUIDO</p>
-                <p class="text3 ">Disfruta de un rico desayuno americano o buffet<br> ilimitado.</p>
-                <p class="text4 ">CENA ROMANTICA</p>
-                <p class="text5 ">Hemos seleccionado los mejores guías turísticos <br>para que recorras todo el centro histórico</p>
-                <p class="text6 ">
-                    <span style="font-size: 0.938rem; ">$</span>
-                    <span style="font-size: 2.5rem; ">400.000</span>
-                    <span style="font-size: 0.938rem; " style="font-family: poppinsRegular; ">c/u</span>
-                </p>
-                <a href="destinos.html ">
-                    <section class="btnRecomendadoDia ">
-                        <p class=txtbtn>RESERVA AHORA!</p>
-                    </section>
-                </a>
+    <section class="container ">
+        <div class="row g-3">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <img src="build/img/Barichara.jpg " alt="imagen recomendacion dia" class="w-100 m-0 rounded-5 shadow ">
             </div>
+
+            <div class="col-md-6 recodia d-lg-flex flex-lg-column justify-content-lg-center">
+                <h2 class="fs-6 text-uppercase text-primary fw-bold mb-0">Recomendado del día</h2>
+                <p class="fs-1 text-uppercase text-secondary fw-bold mb-0">Barichara</p>
+
+                <p class="text-secondary puntuacion mt-n1 mb-0">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+                <p class="text-uppercase text-primary fw-bold ">3 dias y (2 noches)</p>
+
+                <ul class="list-unstyled">
+                    <li class="ms-2 mb-2">
+                        <h3 class="text-primary m-0 fw-bold">DESAYUNO INCLUIDO</h3>
+                        <p class="text-primary ">Disfruta de un rico desayuno americano o buffet ilimitado </p>
+                    </li>
+
+                    <li class="ms-2">
+                        <h3 class="text-primary m-0 fw-bold">CENA ROMANTICA</h3>
+                        <p class="text-primary">Hemos seleccionado los mejores guías turísticos para que recorras todo el centro histórico</p>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-center fw-bold text-primary fs-6">$<span class="fs-4">400.000</span>c/u</p>
+                    </div>
+                    <div class=" col-6 ">
+                        <a href="destinos.html " class="btn btn-secondary text-white p-1">Reservar Ahora</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-    </div>
+    </section>
+    <!-- 
     <div>
         <div class="nuevasAventuras ">
             <section><img class="bannerAventuras " src="Image/Valle.jpg "></section>
@@ -331,7 +340,7 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
-    <script src="build/js/app.js"></script>
+    <script src="build/js/app.js "></script>
 </body>
 
 </html>
