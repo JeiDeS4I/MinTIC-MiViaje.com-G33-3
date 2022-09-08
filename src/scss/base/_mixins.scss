@@ -1,6 +1,33 @@
+@use '../custom' as *;
 @mixin efecto {
     &:hover {
         transition: 0.5s all;
         transform: scale(1.03);
     }
+}
+
+@mixin imagenFondo($url) {
+    width: 74%;
+    height: 32rem;
+    @include media-breakpoint-up(sm) {
+        width: 41%;
+    }
+    @include media-breakpoint-up(sm) {
+        width: 55%;
+        height: 30rem;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 65%;
+        height: 24rem;
+    }
+    @include media-breakpoint-up(xl) {
+        width: 60%;
+        height: 24rem;
+    }
+    background-image: url($url);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
 }

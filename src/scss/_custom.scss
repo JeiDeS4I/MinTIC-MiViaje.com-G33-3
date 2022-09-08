@@ -2,6 +2,16 @@
 /* Archivo para traer y modificar variables de bootsrap
 /* --------------------------------------------------------- */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 $naranja: #E48D36;
 $azul: #023F76;
 $primary:$azul;
