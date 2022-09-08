@@ -1,4 +1,18 @@
 @use '../custom' as *;
+.header {
+    @include media-breakpoint-up(lg) {
+        &.fijo {
+            top: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            box-shadow: 0 4px 2px -2px gray;
+            z-index: 5;
+            background-color: white;
+        }
+    }
+}
+
 .icono {
     @include media-breakpoint-up(md) {
         margin-right: 35rem;

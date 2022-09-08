@@ -6,28 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiViaje.com</title>
-    <link rel="shortcut icon" href="Image/favicon.png">
+    <link rel="shortcut icon" href="build/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!--  <link rel="stylesheet" href="styles/style.css"> -->
-    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
-    <header class="container-xl p-0 py-lg-1">
-        <div class=" header navbar navbar-expand-lg container navbar-light">
-
+    <header class="w- p-0 ">
+        <div class="header navbar navbar-expand-lg navbar-light">
             <div class="icono">
                 <a class="nombre-sitio navbar-brand ms-1 ms-md-0" href="index.html">
-                    <img id="logo" src="build/img/logoNaranja.svg" alt="logoInicio">
+                    <img id="logo" src="build/img/logoNaranja.svg" alt="logoInicio" class="ms-1">
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
-                <span class="navbar-toggler-icon">
 
-                </span>
+            <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div id="navegacion" class="collapse navbar-collapse">
@@ -35,11 +33,10 @@
                     <a class=" text-decoration-none seleccionado" href="index.html">Home</a>
                     <a class=" text-decoration-none" href="destinos.html">Destinos</a>
                     <a class=" text-decoration-none" href="404.html">MiReserva</a>
-                    <a class=" text-decoration-none" href="404.html">Contactenos</a>
+                    <a class=" text-decoration-none me-lg-1" href="404.html">Contactenos</a>
                     </ul>
                 </nav>
             </div>
-
         </div>
     </header>
 
@@ -48,6 +45,7 @@
             <p class="titulo text-primary fw-bold text-uppercase m-0">viaja,vive,existe</p>
             <div class="d-flex flex-column">
                 <a href="destinos.html" class="text-primary text-capitalize m-0 texto__banner text-decoration-none">destinos populares</a>
+
                 <div class="tarjetas d-flex">
                     <a href="#" class="tarjeta me-1 p-1 text-decoration-none mt-1">
                         <div class="contenido__tarjeta">
@@ -58,6 +56,7 @@
                             <p class="precio">desde $50.000 la noche</p>
                         </div>
                     </a>
+
                     <a href="#" class="tarjeta me-1 p-1 text-decoration-none mt-1">
                         <div class="contenido__tarjeta pb-3">
                             <div>
@@ -67,6 +66,7 @@
                             <p class="precio">desde $42.000 la noche</p>
                         </div>
                     </a>
+
                     <a href="#" class="tarjeta me-1 p-1 text-decoration-none mt-1">
                         <div class="contenido__tarjeta">
                             <div>
@@ -78,7 +78,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -188,9 +187,7 @@
                         <a href="destinos.html" class="btn__recomendado btn btn-secondary text-uppercase fw-bold text-white d-block py-1 d-md-inline-block">Reservar Ahora</a>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -244,11 +241,13 @@
                     <div>
                         <p class="fs-2 text-center fw-bold text-primary text-uppercase">próximamente nuestra <span class="text-secondary">app</span></p>
                     </div>
+
                     <div>
                         <p class="text-center text-uppercase text-primary mb-2">
                             si eres uno de los primeros, podras obtener <span class="fw-bold text-secondary">10%</span> de descuento en tu primera reserva
                         </p>
                     </div>
+
                     <div class="text-center fs-6">
                         <p class="text-uppercase text-primary m-0 fs-7">muy pronto valido en:</p>
                         <img src="build/img/btnStore.png" alt="Botones App" class="img-fluid w-50 m-0">
@@ -278,6 +277,7 @@
                     <div class="d-flex flex-md-column justify-content-md-between align-items-md-center">
                         <img src="build/img/LogoBlanco.svg" alt="logo footer">
                     </div>
+
                     <div class="d-md-flex justify-content-md-between align-items-md-center">
                         <i class="bi bi-instagram me-2 mx-md-auto"></i>
                         <i class="bi bi-facebook me-2 mx-md-auto"></i>
@@ -295,74 +295,14 @@
                     <a href="#" class="nav-link fs-7 ">Mapa del Sitio</a>
                 </div>
             </div>
-
         </div>
+
         <div class="border-top mt-2 mt-md-0">
             <p class="text-center fs-7">Copyright - Miviaje.com - 2022</p>
         </div>
-        </div>
 
     </footer>
-    <!-- 
-    <footer>
-        <div class="conocenos ">
-            <p>Conócenos</p>
-            <ul class="listaConocenos ">
-                <a href="404.html ">
-                    <li>¿Qué es MiViaje.com?</li>
-                </a>
-                <a href="404.html ">
-                    <li>Privacidad</li>
-                </a>
-                <a href="404.html ">
-                    <li>Términos</li>
-                </a>
-                <a href="404.html ">
-                    <li> Mapa del sitio</li>
-                </a>
-                <a href="404.html ">
-                    <li> Datos de la empresa</li>
-                </a>
-            </ul>
 
-        </div>
-        <div class="dudas ">
-            <p>¿Dudas?<br> Encuéntranos
-            </p>
-            <ul class="listaDudas ">
-                <a href="404.html ">
-                    <li>Centro de ayuda</li>
-                </a>
-                <a href="404.html ">
-                    <li>Reversión de Pagos</li>
-                </a>
-                <li>(xxx) xxx xxxx xx</li>
-                <li>info@miviaje.com</li>
-            </ul>
-
-        </div>
-
-        <h1 class=logoFooter>
-            <a title="logoFooter " href="Index.html ">
-                <img id="logoFooter " src="Image/LogoBlanco.svg " alt="logoFooter "></a>
-        </h1>
-        <div class="redesSociales ">
-
-            <a href="404.html "><img src="Image/Instagram.png " class="instagram "></a>
-            <a href="404.html "><img src="Image/Facebook.png " class="facebook "></a>
-            <a href="404.html "><img src="Image/Telegram.png " class="telegram "></a>
-            <a href="404.html "><img src="Image/Twitter.png " class="twitter "></a>
-
-
-        </div>
-        <p class="txtFinal ">Copyright - Miviaje.com - 2022</p>
-
-    </footer>-->
-
-
-
-
-    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
     <script src="build/js/app.js "></script>
 </body>
