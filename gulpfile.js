@@ -56,7 +56,8 @@ function dev() {
 }
 
 exports.css = css;
+exports.cssbuild = cssbuild;
 exports.dev = dev;
 exports.js = js;
 exports.imagenes = imagenes;
-exports.default = series(imagenes, js, dev);
+exports.default = series(imagenes, css, js, dev);

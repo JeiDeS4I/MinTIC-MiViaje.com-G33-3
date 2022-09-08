@@ -10,8 +10,14 @@
         color: $primary;
         font-size: 1.6rem;
         font-weight: 500;
+        &:hover {
+            color: $secondary;
+        }
     }
     .seleccionado {
         color: $secondary;
+        &:hover {
+            color: $primary;
+        }
     }
 }
