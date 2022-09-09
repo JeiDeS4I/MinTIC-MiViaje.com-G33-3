@@ -12,28 +12,33 @@ function placeholderFecha() {
 
 function cambiarPlaceHolderDate1() {
     const fechainicio = document.querySelector('#fechainicio');
-    fechainicio.type = Text;
+    if (fechainicio) {
+        fechainicio.type = Text;
 
-    fechainicio.addEventListener('blur', function() {
-        fechainicio.type = 'text';
-    })
+        fechainicio.addEventListener('blur', function() {
+            fechainicio.type = 'text';
+        })
 
-    fechainicio.addEventListener('focus', function() {
-        fechainicio.type = 'date';
-    });
+        fechainicio.addEventListener('focus', function() {
+            fechainicio.type = 'date';
+        });
+    }
 }
 
 function cambiarPlaceHolderDate2() {
+
     const fechafinal = document.querySelector('#fechafinal');
-    fechafinal.type = Text;
+    if (fechafinal) {
+        fechafinal.type = Text;
 
-    fechafinal.addEventListener('blur', function() {
-        fechafinal.type = 'text';
-    })
+        fechafinal.addEventListener('blur', function() {
+            fechafinal.type = 'text';
+        })
 
-    fechafinal.addEventListener('focus', function() {
-        fechafinal.type = 'date';
-    });
+        fechafinal.addEventListener('focus', function() {
+            fechafinal.type = 'date';
+        });
+    }
 }
 
 function navegacionFija() {
@@ -48,3 +53,24 @@ function navegacionFija() {
         }
     })
 }
+
+//Copiado desde BootStrap validation
+(function() {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function(form) {
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()

@@ -33,15 +33,77 @@
                     <a class=" text-decoration-none" href="index.html">Home</a>
                     <a class=" text-decoration-none" href="destinos.html">Destinos</a>
                     <a class=" text-decoration-none" href="404.html">MiReserva</a>
-                    <a class=" text-decoration-none me-lg-3" href="contacto.html">Contactenos</a>
+                    <a class=" text-decoration-none me-lg-3 seleccionado" href="contacto.html">Contactenos</a>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- Tu código  aquí -->
+    <main class="container mt-3">
+        <div class="row gx-4">
+            <div class="col-md-6 d-flex flex-column justify-content-between align-items-center">
+                <div>
+                    <div class="my-1">
+                        <h4 class="text-primary text-capitalize lh-1 m-0">Ponte en Contacto</h4>
+                        <p class="fs-8 text-primary lh-sm m-0">¿necesitas ayuda?, ¿quieres realizar un viaje empresarial?, no dudes en contactarnos</p>
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-center py-2">
+                        <p class=" text-capitalize text-secondary fw-bold lh-1 m-0">email:</p>
+                        <p class=" fs-8 text-primary m-0">contacto@miviaje.com</p>
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-center py-2 ">
+                        <p class="text-capitalize text-secondary fw-bold m-0 lh-1 ">Visitanos:</p>
+                        <p class="m-0 fs-8 text-primary ">Calle Falsa 123 # 56 - 87, Bogotá Colombia</p>
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-center py-2">
+                        <p class="text-capitalize text-secondary fw-bold m-0 lh-1 ">Numero Contacto</p>
+                        <p class="m-0 fs-8 text-primary ">+57 310 1234 567</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <form class=" needs-validation " novalidate>
+                    <fieldset>
+                        <div class="mb-1">
+                            <label for="nombre" class="form-label text-primary fw-bold">Nombre</label>
+                            <input type="text" class="form-control " id="nombre" placeholder="Tu Nombre" required>
+                            <span class="invalid-feedback">El Nombre no puede ir vacio</span>
+                            <span class="valid-feedback"></span>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="telefono" class="form-label text-primary fw-bold">Teléfono</label>
+                            <input type="tel" class="form-control " id="telefono" placeholder="Tu teléfono" required>
+                            <span class="invalid-feedback">El Teléfono no puede ir vacio</span>
+                            <span class="valid-feedback">Very Nice</span>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="email" class="form-label text-primary fw-bold">E-mail</label>
+                            <input type="email" class="form-control " id="email" placeholder="Tu E-mail" required>
+                            <span class="invalid-feedback">El campo Email no puede ir vacio</span>
+                            <span class="valid-feedback"></span>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="form-label" class="text-primary fw-bold" for="nombre">Mensaje:</label>
+                            <textarea rows="7" class="form-control " placeholder="Escribe tú mensaje" required></textarea>
+                            <span class="invalid-feedback">El campo Mensaje no puede ir vacio</span>
+                            <span class="valid-feedback"></span>
+                        </div>
+
+                        <div class="d-grid d-md-flex">
+                            <input type="submit" class="btn btn-secondary text-white" value="Enviar Formulario">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer text-white bg-primary py-2 ">
