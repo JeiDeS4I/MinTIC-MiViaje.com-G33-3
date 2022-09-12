@@ -43,15 +43,28 @@ function cambiarPlaceHolderDate2() {
 
 function navegacionFija() {
     const barra = document.querySelector('.header');
-    const banner = document.querySelector('.banner');
+    const bandera__scroll = document.querySelector('.bandera__scroll');
+    const barra2 = document.querySelector('.header2');
 
-    window.addEventListener('scroll', () => {
-        if (banner.getBoundingClientRect().top < 0) {
-            barra.classList.add('fijo');
+    if (bandera__scroll) {
+        if (barra2) {
+            window.addEventListener('scroll', () => {
+                if (bandera__scroll.getBoundingClientRect().top < 0) {
+                    barra2.classList.add('fijo2');
+                } else {
+                    barra2.classList.remove('fijo2');
+                }
+            })
         } else {
-            barra.classList.remove('fijo');
+            window.addEventListener('scroll', () => {
+                if (bandera__scroll.getBoundingClientRect().top < 0) {
+                    barra.classList.add('fijo');
+                } else {
+                    barra.classList.remove('fijo');
+                }
+            })
         }
-    })
+    }
 }
 
 //Copiado desde BootStrap validation

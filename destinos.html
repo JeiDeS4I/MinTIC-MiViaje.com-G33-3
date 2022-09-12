@@ -1,317 +1,228 @@
 <!DOCTYPE html>
-
-<html leng="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-16">
-    <title>MiViaje.com</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos | Mi Viaje.com</title>
+    <link rel="shortcut icon" href="build/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--  <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
-    <header class="headeAzul">
-        <h1 class="logoblanco"><a title="miviaje.com" href="Index.html">
-            <img id="logo" src="Image/logoBlanco.svg" alt="miviaje.com"></a></h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="destinos.html" style="color:#E48D36">Destinos</a>
-            <a href="404.html">MiReserva</a>
-            <a href="404.html">Contactenos</a>
-        </nav>
+    <header class="p-0 bg-primary">
+        <div class="header2 navbar navbar-expand-lg navbar-dark">
+            <div class="icono ms-3">
+                <a class="nombre-sitio navbar-brand ms-1 ms-md-0" href="index.html">
+                    <img id="logo" src="build/img/LogoBlanco.svg" alt="logoInicio" class="ms-1">
+                </a>
+            </div>
+
+            <button class="navbar-toggler me-1 " type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+
+            <div id="navegacion" class="collapse navbar-collapse">
+                <nav class="navbar-nav container d-flex flex-lg-row justify-content-md-between text-center navegacion">
+                    <a class=" text-decoration-none text-white " href=" index.html ">Home</a>
+                    <a class=" text-decoration-none seleccionado " href="destinos.html ">Destinos</a>
+                    <a class=" text-decoration-none text-white " href="404.html ">MiReserva</a>
+                    <a class=" text-decoration-none me-lg-3 text-white " href="contacto.html ">Contactenos</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
-        <div id="box">
-            <form class="formulario">
-                <section class="cajaPrincipal">
-                    <section class="ciudad">
-                        <section class="imgCiudad">
-                            <img src="Image/VectoricoCiudad.svg">
-                        </section>
-                        <section class="datosCiudad">
-                            <p>Ciudad</p>
-                            <select id="ciudad" name="ciudad" class="select1" style="width: 147px;">
-                                <option value="BARICHARA">BARICHARA</option>
-                                <option value="BARRANQUILLA" selected>BARRANQUILLA</option>
-                                <option value="BOGOTA">BOGOTÁ</option>
-                                <option value="CALI">CALÍ</option>
-                                <option value="CARTAGENA">CARTAGENA</option>
-                                <option value="SAN ANDRES">SAN ANDRES</option>
-                                <option value="SANTA MARTA">SANTA MARTA</option>
-                                <option value="LETICIA">LETICIA</option>
-                            </select>
-                        </section>
 
-                    </section>
-                    <div class="checkIn">
-                        <section class="imgCalendarioIN"><img src="Image/Vectorcalendario.svg"></section>
-                        <section class="datosCheckIN">
-                            <p>Check In</p>
-                            <input class="cajaIn" type="date" max="2023-05-01" style="width: 100px;"
-                                onkeydown="return false">
-                        </section>
+    <main class="bandera__scroll container-md">
+        <h5 class="text-primary text-center mt-3">SELECCIONA UNO DE NUESTROS DESTINOS</h4>
+            <div class="destinos row g-2">
+                <a href="#" class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none">
+                    <div class="destino__imagen">
+                        <img src="build/img/bogota.jpg" alt="Imagen destino" class="img-fluid rounded-5">
+                        <div class="contenido">
+                            <p class="fs-6 text-primary fw-bold">Bogotá</p>
+                            <p class="fs-7 text-primary">3 Hoteles con Desayuno Incluido Noche desde $50.000</p>
+                        </div>
                     </div>
-                    <div class="checkOut">
-                        <section class="imgCalendarioOut"><img src="Image/Vectorcalendario.svg"></section>
-                        <section class="datosCheckOut">
-                            <p>Check Out</p>
-                            <input class="cajaOut" type="date" max="2023-05-01" style="width: 100px;"
-                                onkeydown="return false">
-                        </section>
-                    </div>
-                    <div class="huespedes">
-                        <section class="imgHuespedes"><img src="Image/icoHuesped.svg ">
-                        </section>
-                        <section class="datosHuespedes">
-                            <p>Huespedes</p>
-                            <select class="select2">
-                                <option value="opcion 1">1 Adulto</option>
-                                <option value="opcion 2" selected>2 Adultos</option>
-                                <option value="opcion 3">3 Adultos</option>
-                                <option value="opcion 4">4 Adultos</option>
-                            </select>
-                        </section>
-
-                        <section>
-                            <img class="img3H" src="Image/VectoricoCiudad.svg">
-                            <select class="select3" style="width: 80px;">
-                                <option value="opcion 0">1 hab</option>
-                                <option value="opcion 1">2 hab</option>
-                                <option value="opcion 2">3 hab</option>
-                                <option value="opcion 3">4 hab</option>
-                            </select>
-                        </section>
-                    </div>
-                    <div class="buscar">
-                        <div type="submit" id="btnBuscar" onclick="funcionBuscar()" class="imgbuscar"><img
-                                src="Image/lupa.svg"></div>
-                    </div>
-                </section>
-                <!--   TAL VEZ SE INTEGRE...
-                        <div class="habitaciones" name="habitaciones" style="width: 5px;">
-                            <label>Habitaciones</label>
-                            <select class = "select4">
-                                <option value="opcion 1">1 Habitacion</option>
-                                <option value="opcion 2">2 Habitaciones</option>
-                                <option value="opcion 3">3 Habitaciones</option>
-                                <option value="opcion 4">4 Habitaciones</option> 
-                            </select>
-                        </div> -->
-            </form>
-        </div>
-        <div>
-            <div class="cajaPrincipalDestinos">
-                <div class="destinos">
-                    <section>
-                        <section class="destino1">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino1" src="Image/bogota.jpg">
-    
-                            </section></a>
-                            <section>
-                                <h4><b>Bogotá</b></h4>
-                                <p>3 Hoteles con Desayuno Incluido</p><br>
-                                <p>Noche desde $50.000</p>
-                            </section>
-                        </section>
-    
-                        <section class="destino2">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino2" src="Image/Cartagena.png">
-                            </section></a>
-                            <section>
-                                <h4><b>Cartagena</b></h4>
-                                <p>3 Hoteles Todo Incluido</p><br>
-                                <p>Noche desde $245.000</p>
-                            </section>
-                        </section>
-                        <section class="destino3">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino3" src="Image/medellin.jpg">
-                            </section></a>
-                            <section>
-                                <h4><b>Medellín</b></h4>
-                                <p>5 Hoteles con Desayuno Incluido</p><br>
-                                <p>Noche desde $40.000</p>
-                            </section>
-                        </section>
-                    </section>
-                    <section> 
-                        <section class="destino4">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino4" src="Image/SanAndres.jpg">
-    
-                            </section></a>
-                            <section>
-                                <h4><b>San Andres</b></h4>
-                                <p>5 Hoteles con Piscina</p><br>
-                                <p>Noche desde $65.000</p>
-                            </section>
-                        </section>
-    
-                        <section class="destino5">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino5" src="Image/Cali.png">
-                            </section></a>
-                            <section>
-                                <h4><b>Calí</b></h4>
-                                <p>5 Hoteles con Desayuno Incluido</p><br>
-                                <p>Noche desde $35.000</p>
-                            </section>
-                        </section>
-                        <section class="destino6">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino6" src="Image/Santa Marta.jpeg">
-                            </section></a>
-                            <section>
-                                <h4><b>Santa Marta</b></h4>
-                                <p>5 Hoteles con Vista al Mar</p><br>
-                                <p>Noche desde $165.000</p>
-                            </section>
-                        </section>
-                    </section>
-                    <section>
-                        <section class="destino7">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino7" src="Image/Barichara.jpg">
-                            </section></a>
-                            <section>
-                                <h4><b>Barichara</b></h4>
-                                <p>4 Hoteles con Piscina</p><br>
-                                <p>Noche desde $200.000</p>
-                            </section>
-                        </section>
-                        <section class="destino8">
-                            <section class="cajaDestino"><a href="destino-seleccionado.html">
-                                    <img class="imgDestino8" src="Image/Leticia.jpg">
-                            </section></a>
-                            <section>
-                                <h4><b>Leticia</b></h4>
-                                <p>3 Bungalows con Desayuno Incluido</p><br>
-                                <p>Noche desde $120.000</p>
-                            </section>
-                        </section>
-                        <section class="destino9">
-                                <section class="cajaDestino">
-                                    <span>MUY PRONTO <br>PODRÁS VIAJAR <br>A MÁS </span><span
-                                        style="color: #E48D36;">DESTINOS</span><br><br>
-                                    <p style="font-size: 0.75rem; line-height: 15px;">SÍGUENOS EN REDES SOCIALES <br>PARA
-                                        ENTERARTE DE NUESTROS <br>NUEVOS DESTINOS</p>
-                                </section>
-                        </section>
-                    </section> 
-                </div>
-            </div>
-
-            <div class="nuevasAventuras2" style ="top:400px;">
-                <section><img class="bannerAventuras" src="Image/Valle.jpg"></section>
-                <div class="cardAventuras">
-                    <section class="grupoCard1">
-                        <section class="cardP1NA"><a href="index.html">
-                                <section class="card1NA">
-                                    <img class="destinop1" src="Image/Cabañas.jpg">
-                                </section>
-                        </section>
-                        <section class="btnAventuras2">
-                            <p class=txtbtn>CABAÑAS / SAN ANDRES
-                                <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px;">DESDE
-                                    250.000</span>
-                            </p>
-                        </section></a>
-                    </section>
-                    <section class="grupoCard2">
-                        <section class="cardP2NA"><a href="index.html">
-                                <section class="card2NA">
-                                    <img class="destinop2" src="Image/Glamping.jpg">
-                                </section>
-                        </section>
-                        <section class="btnAventuras3">
-                            <p class=txtbtn>GLAMPING / BOGOTÁ
-                                <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px;">DESDE
-                                    $150.000</span>
-                            </p>
-                        </section></a>
-                    </section>
-                    <section class="grupoCard3">
-                        <section class="cardP3NA"><a href="index.html">
-                                <section class="card3NA">
-                                    <img class="destinop3" src="Image/bungalows.jpg">
-                                </section>
-                        </section>
-                        <section class="btnAventuras4">
-                            <p class=txtbtn>BUGALOWS / CARTAGENA
-                                <span style="font-weight:500; font-size:0.938rem; letter-spacing: 0.4px;">DESDE
-                                    550.000</span>
-                            </p>
-                        </section>
-                    </section></a>
-                </div>
-            </div>
-            <section class="textAventuras2">
-                <p><span class="txt1Aventuras">EXPLORA NUEVAS</span><br>
-                    <span class="txt2Aventuras">AVENTURAS</span>
-                </p>
-                <a href="destinos.html">
-                    <section class="btnAventuras">
-                        <p class=txtbtn>PRUEBA ALGO NUEVO</p>
-                    </section>
                 </a>
-            </section>
 
-        </div>
+                <a href="#" class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none">
+                    <div class="destino__imagen">
+                        <img src="build/img/SanAndres.jpg" alt="Imagen destino" class="img-fluid rounded-5">
+                        <div class="contenido">
+                            <p class="fs-6 text-primary fw-bold">San Andres</p>
+                            <p class="fs-7 text-primary"> 5 Hoteles con Piscina Noche desde $65.000</p>
+                        </div>
+                    </div>
+                </a>
 
+                <a href="#" class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none">
+                    <div class="destino__imagen">
+                        <img src="build/img/Barichara.jpg" alt="Imagen destino" class="img-fluid rounded-5 w-75">
+                        <div class="contenido">
+                            <p class="fs-6 text-primary fw-bold">Barichara</p>
+                            <p class="fs-7 text-primary">4 Hoteles con Piscina Noche desde $200.000</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none">
+                    <div class="destino__imagen">
+                        <img src="build/img/Cartagena.png" alt="Imagen destino" class="img-fluid rounded-5">
+                        <div class="contenido">
+                            <p class="fs-6 text-primary fw-bold">Cartagena</p>
+                            <p class="fs-7 text-primary">3 Hoteles Todo Incluido Noche desde $245.000</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none">
+                    <div class="destino__imagen">
+                        <img src="build/img/Cali.png" alt="Imagen destino" class="img-fluid rounded-5">
+                        <div class="contenido">
+                            <p class="fs-6 text-primary fw-bold">Cali</p>
+                            <p class="fs-7 text-primary">5 Hoteles con Desayuno Incluido Noche desde $35.000</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none">
+                    <div class="destino__imagen">
+                        <div class="w-75">
+                            <img src="build/img/Leticia.jpg" alt="Imagen destino" class="img-fluid rounded-5">
+                        </div>
+                        <div class="contenido ">
+                            <p class="fs-6 text-primary fw-bold ">Leticia</p>
+                            <p class="fs-7 text-primary ">3 Bungalows con Desayuno Incluido Noche desde $120.000</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="# " class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none ">
+                    <div class="destino__imagen ">
+                        <img src="build/img/medellin.jpg " alt="Imagen destino " class="img-fluid rounded-5 ">
+                        <div class="contenido ">
+                            <p class="fs-6 text-primary fw-bold ">Medellín</p>
+                            <p class="fs-7 text-primary ">5 Hoteles con Desayuno Incluido Noche desde $40.000</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="# " class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none ">
+                    <div class="destino__imagen ">
+                        <img src="build/img/Santa Marta.jpeg " alt="Imagen destino " class="img-fluid rounded-5 ">
+                        <div class="contenido ">
+                            <p class="fs-6 text-primary fw-bold ">Santa Marta</p>
+                            <p class="fs-7 text-primary ">5 Hoteles con Vista al Mar Noche desde $165.000</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="# " class=" col-md-4 col-sm-6 p-2 bg-light rounded-5 text-decoration-none ">
+                    <div class="destino__imagen ">
+                        <img src="build/img/Valle.jpg" alt="Imagen destino " class="img-fluid rounded-5 ">
+                        <div class="contenido ">
+                            <p class="fs-6 text-primary fw-bold ">Valle de Cauca</p>
+                            <p class="fs-7 text-primary ">5 Hoteles con Vista al Mar Noche desde $165.000</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
     </main>
-    <footer>
-        <div class="conocenos">
-            <p>Conócenos</p>
-            <ul class="listaConocenos">
-                <a href="404.html">
-                    <li>¿Qué es MiViaje.com?</li>
+
+    <section class="banner__aventuras ">
+        <div class="degradado__banner row mx-0 ">
+            <div class="aventura col-md-6 col-lg d-flex flex-column justify-content-center align-items-center align-items-md-end ">
+                <p class="m-0 text-primary text-uppercase fw-bold ">Explorar nuevas</p>
+                <p class="m-0 text-secondary text-uppercase fw-bold fs-3 mt-n1 ">Aventuras</p>
+                <div class="aventura__btn ">
+                    <a href="destinos.html " class="btn btn-secondary text-white d-inline-md-block m-0 p-1 text-uppercase fw-bold ">prueba algo nuevo</a>
+                </div>
+            </div>
+
+            <div class="aventura col-md-6 col-lg d-flex flex-column my-auto mt-lg-4 ">
+                <a href="destinos.html " class="position-relative ">
+                    <div class=" imagen_aventura1 rounded-5 mx-auto w-xl-50 "> </div>
+                    <div class="bg-primary rounded-4 text-white info_aventura d-inline-block ">
+                        <p class="text-uppercase m-0 text-center ">cabañas/san andres</p>
+                        <p class="text-uppercase m-0 text-center fw-bold ">Desde 250.000</p>
+                    </div>
                 </a>
-                <a href="404.html">
-                    <li>Privacidad</li>
+            </div>
+
+            <div class="aventura col-md-6 col-lg d-flex flex-column my-auto ">
+                <a href="destinos.html " class="position-relative ">
+                    <div class="imagen_aventura2 rounded-5 mx-auto "> </div>
+                    <div class="bg-primary rounded-4 text-white info_aventura d-inline-block ">
+                        <p class="text-uppercase m-0 text-center ">Glamping/bogotá</p>
+                        <p class="text-uppercase m-0 text-center fw-bold m ">Desde 150.000</p>
+                    </div>
                 </a>
-                <a href="404.html">
-                    <li>Términos</li>
+            </div>
+
+            <div class="aventura col-md-6 col-lg d-lg-flex flex-lg-column my-auto mt-lg-3 ">
+                <a href="destinos.html " class="position-relative ">
+                    <div class="imagen_aventura3 rounded-5 mx-auto "> </div>
+                    <div class="bg-primary rounded-4 text-white info_aventura d-inline-block d-md-block ">
+                        <p class="text-uppercase m-0 text-center ">bugalows/cartagena</p>
+                        <p class="text-uppercase m-0 text-center fw-bold ">Desde 550.000</p>
+                    </div>
                 </a>
-                <a href="404.html">
-                    <li> Mapa del sitio</li>
-                </a>
-                <a href="404.html">
-                    <li> Datos de la empresa</li>
-                </a>
-            </ul>
+            </div>
 
         </div>
-        <div class="dudas">
-            <p>¿Dudas?<br>
-                Encuéntranos</p>
-            <ul class="listaDudas">
-                <a href="404.html">
-                    <li>Centro de ayuda</li>
-                </a>
-                <a href="404.html">
-                    <li>Reversión de Pagos</li>
-                </a>
-                <li>(xxx) xxx xxxx xx</li>
-                <li>info@miviaje.com</li>
-            </ul>
+    </section>
+    <footer class="footer text-white bg-primary py-2 ">
+        <div class="container ">
+            <div class="row g-md-3 g-lg-5 ">
+                <div class="col-md-4 enlaces__footer d-md-block d-flex flex-column justify-content-between align-items-center ">
+                    <p class="fw-bold ">Cónocenos</p>
+                    <a href="# " class="nav-link fs-7 ">¿Qué es MiViaje.com?</a>
+                    <a href="# " class="nav-link fs-7 ">Privacidad</a>
+                    <a href="# " class="nav-link fs-7 ">Términos</a>
+                    <a href="# " class="nav-link fs-7 ">Mapa del Sitio</a>
+                    <a href="# " class="nav-link fs-7 ">Datos de la Empresa</a>
+                </div>
 
+                <div class="col-md-4 pt-4 mb-3 mb-md-0 d-md-block d-flex flex-column justify-content-between align-items-center ">
+                    <div class="d-flex flex-md-column justify-content-md-between align-items-md-center ">
+                        <img src="build/img/LogoBlanco.svg " alt="logo footer ">
+                    </div>
+
+                    <div class="d-md-flex justify-content-md-between align-items-md-center ">
+                        <i class="bi bi-instagram me-2 mx-md-auto "></i>
+                        <i class="bi bi-facebook me-2 mx-md-auto "></i>
+                        <i class="bi bi-telegram me-2 mx-md-auto "></i>
+                        <i class="bi bi-twitter me-2 mx-md-auto "></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 enlaces__footer d-md-block d-flex flex-column justify-content-between align-items-center ">
+                    <p class="m-0 mt-n1 fw-bold ">¿Dudas? </p>
+                    <p class="m-0 mt-md-n1 fw-bold ">Encuentranos</p>
+                    <a href="# " class="nav-link fs-7 ">¿Qué es  MiViaje.com?</a>
+                    <a href="# " class="nav-link fs-7 ">Privacidad</a>
+                    <a href="# " class="nav-link fs-7 ">Términos</a>
+                    <a href="# " class="nav-link fs-7 ">Mapa del Sitio</a>
+                </div>
+            </div>
         </div>
 
-        <h1 class=logoFooter><a title="logoFooter" href="Index.html">
-                <img id="logoFooter" src="Image/LogoBlanco.svg" alt="logoFooter"></a></h1>
-        <div class="redesSociales">
-
-            <a href="404.html"><img src="Image/Instagram.png" class="instagram"></a>
-            <a href="404.html"><img src="Image/Facebook.png" class="facebook"></a>
-            <a href="404.html"><img src="Image/Telegram.png" class="telegram"></a>
-            <a href="404.html"><img src="Image/Twitter.png" class="twitter"></a>
+        <div class="border-top mt-2 mt-md-0 ">
+            <p class="text-center fs-7 ">Copyright - Miviaje.com - 2022</p>
         </div>
-        <p class="txtFinal">Copyright - Miviaje.com - 2022</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
+    <script src="build/js/app.js "></script>
 </body>
 
 </html>
