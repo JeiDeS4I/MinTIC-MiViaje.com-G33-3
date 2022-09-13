@@ -1,0 +1,31 @@
+/* ---------------------------------------------------------
+/* Archivo para traer y modificar variables de bootsrap
+/* --------------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+$naranja: #E48D36;
+$azul: #023F76;
+$primary:$azul;
+$secondary:$naranja;
+//Tipografía
+$headings-font-style:'Poppins',
+sans-serif;
+$font-family-sans-serif: 'Poppins',
+sans-serif;
+$font-size-root: 62.5%;
+$font-size-base:2rem;
+//Espaciado
+$spacer: 5rem;
+$enable-negative-margins: true;
+//Icono Hambuerguesa
+$navbar-dark-color: #fff;
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
