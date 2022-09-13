@@ -1,114 +1,190 @@
 <!DOCTYPE html>
-
-<html leng="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-16">
-    <title>MiViaje.com</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos | Mi Viaje.com</title>
+    <link rel="shortcut icon" href="build/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--  <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body >
-    <header class="headeAzul">
-        <h1 class="logoblanco"><a title="miviaje.com" href="Index.html">
-                <img id="logo" src="Image/logoBlanco.svg" alt="miviaje.com"></a></h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="destinos.html" style="color:#E48D36">Destinos</a>
-            <a href="404.html">MiReserva</a>
-            <a href="404.html">Contactenos</a>
-        </nav>
-    </header>
-    <main>
-        <div class = "reserva">
-            <div class="hoteleSeleccionado">
-                <div class ="cajaHotelSelec">
-                    HOLA
-    
-                </div>
-                
+
+<body>
+    <header class="p-0 bg-primary">
+        <div class="header navbar navbar-expand-lg navbar-light">
+            <div class="icono ms-3">
+                <a class="nombre-sitio navbar-brand ms-1 ms-md-0" href="index.html">
+                    <img id="logo" src="build/img/logoNaranja.svg" alt="logoInicio" class="ms-1">
+                </a>
             </div>
-            <div class = "formularioReserva">
-                <form >
-                    <div class ="cajasTexto">
-                        <!-- CREACIÓN DE FORMULARIO -->
-                        <!-- El for relaciona la caja de texto con el titulo -->
-                        <label for = "nombre">NOMBRE</label>
-                        <input type = "text" id = "nombre" class ="inputForm" required>
-    
-                        <label for = "apellido">APELLIDO</label>
-                        <input type = "text" id = "apellido" class ="inputForm" required>
-    
-                        <label for = "cedula">NÚMERO DOCUMENTO</label>
-                        <input type ="number" id ="cedula" class ="inputForm" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-                        
-    
-                        <label for = "email">CORREO ELECTRONICO</label>
-                        <input type = "email" id = "email" class ="inputForm" required
-                        placeholder="email@domino.com">
-    
-                        <label for = "telefono">TELÉFONO</label>
-                        <input type = "tel" id = "telefono" class ="inputForm" required
-                        placeholder="(xx) xxx xxx xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-    
-                        <!-- Caja de texto que se puede manipular el tamaño 
-                        se le da un tamaño por medio de columnas (cols) y filas (rows)-->
-                        <label for = "mensaje">COMENTARIOS</label>
-                        <textarea cols= "72" rows="4" id = "mensaje" class ="inputForm"></textarea>
+
+            <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navegacion" class="collapse navbar-collapse">
+                <nav class="navbar-nav container d-flex flex-lg-row justify-content-md-between text-center navegacion">
+                    <a class=" text-decoration-none text-white" href="index.html">Home</a>
+                    <a class=" text-decoration-none seleccionado" href="destinos.html">Destinos</a>
+                    <a class=" text-decoration-none text-white" href="404.html">MiReserva</a>
+                    <a class=" text-decoration-none me-lg-3 text-white" href="contacto.html">Contactenos</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-xl mt-3">
+        <div class="row g-3">
+            <div class="col-md-5">
+                <div class="card mb-3 shadow-lg">
+                    <img class="card-img-top" src="build/img/bogota.jpg" alt="imagen Destino Final">
+
+                    <div class="card-body border-bottom">
+                        <h3 class="card-title text-primary"> Hotel Bogotá</h3>
+
+                        <ul>
+                            <li>
+                                1 Habitación: 2 Personas
+                            </li>
+
+                            <li>
+                                llegada : sábado 1 de octubre
+                            </li>
+
+                            <li>
+                                Salida: Lunes 3 Octubre
+                            </li>
+                        </ul>
                     </div>
-                    <section>
-                         <!-- Boton -->
-                    <input type="submit" value="REALIZAR RESERVA" class="boton">
-                    </section>
-                       
+
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <p class="fs-8 text-primary">Sub total</p>
+                            <p class="fs-8 text-primary">$982.358</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="fs-8 text-secondary">Descuentos</p>
+                            <p class="fs-8 text-secondary">-$82.358</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="fs-5 text-primary fw-bold">Total</p>
+                            <p class="fs-5 text-primary fw-bold">$900.000</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <form class="needs-validation " novalidate>
+
+                    <legend class="fs-6 m-0"><i class="bi bi-person-fill"></i> Titular</legend>
+                    <fieldset class="row g-2">
+                        <div class="col-md-6 mt-1">
+                            <label for="nombre" class="form-label text-primary fs-8">Nombre(s)</label>
+                            <input type="text" class="form-control fs-8" id="nombre" placeholder="Tu Nombre" required>
+                            <span class="invalid-feedback">Este campo puede ir vacio</span>
+                            <span class="valid-feedback"></span>
+                        </div>
+
+                        <div class="col-md-6 mt-1">
+                            <label for="apellido" class="form-label text-primary fs-8">Apellido(s)</label>
+                            <input type="text" class="form-control fs-8" id="apellido" placeholder="Tu Apellido" required>
+                            <span class="invalid-feedback">Este campo puede ir vacio</span>
+                            <span class="valid-feedback"></span>
+                        </div>
+
+                        <div class="col-md-12 mt-1">
+                            <label for="email" class="form-label text-primary fs-8">E-mail</label>
+                            <input type="email" class="form-control fs-8" id="email" placeholder="Confirmar E-mail" required>
+                            <span class="invalid-feedback">Este campo puede ir vacio</span>
+                            <span class="valid-feedback"></span>
+                        </div>
+
+                        <div class="col-md-12 mt-1">
+                            <label for="email" class="form-label text-primary fs-8">Confirma Tu E-mail</label>
+                            <input type="email" class="form-control fs-8" id="email" placeholder="Tu E-mail" required>
+                            <span class="invalid-feedback">Este campo puede ir vacio</span>
+                            <span class="valid-feedback"></span>
+                        </div>
+
+                        <div class="col-md-12 mt-1">
+                            <label for="telefono" class="form-label text-primary fs-8">Teléfono</label>
+                            <input type="tel" class="form-control fs-8" id="telefono" placeholder="Tu teléfono" required>
+                            <span class="invalid-feedback">Este campo puede ir vacio</span>
+                            <span class="valid-feedback">Very Nice</span>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="mt-2">
+                        <legend class="fs-6 mt-0 mb-1"><i class="bi bi-card-text"></i> Peticiones Especiales</legend>
+                        <div class="mb-1">
+                            <label for="form-label" class="text-primary fs-8" for="nombre">Mensaje:</label>
+                            <textarea rows="5" class="form-control fs-8" placeholder="Escribe tú mensaje"></textarea>
+                            <p class="fs-9">Escribe si necesitas algo en especial para tu estancia (ej. cunas, camas extra, etc). Siempre hacemos llegar tus peticiones al hotel, sin embargo están sujetas a disponibilidad y puede haber cargos adicionales.</p>
+                        </div>
+                    </fieldset>
+                    <div class="d-grid d-md-flex my-2">
+                        <input type="submit" class="btn btn-secondary text-white text-center" value=" Agendar Ahora!! ">
+                    </div>
                 </form>
             </div>
-
         </div>
-       
-
     </main>
-    <footer>
-        <div class="conocenos">
-            <p>Conócenos</p>
-            <ul class="listaConocenos">
-                <a href="404.html"><li>¿Qué es MiViaje.com?</li></a> 
-                <a href="404.html"><li>Privacidad</li></a> 
-                <a href="404.html"><li>Términos</li></a> 
-                <a href="404.html"> <li> Mapa del sitio</li></a> 
-                <a href="404.html"><li> Datos de la empresa</li></a> 
-            </ul>
 
+    <footer class="footer text-white bg-primary py-2 ">
+        <div class="container ">
+            <div class="row g-md-3 g-lg-5 ">
+                <div class="col-md-4 enlaces__footer d-md-block d-flex flex-column justify-content-between align-items-center ">
+                    <p class="fw-bold ">Cónocenos</p>
+                    <a href="# " class="nav-link fs-7 ">¿Qué es MiViaje.com?</a>
+                    <a href="# " class="nav-link fs-7 ">Privacidad</a>
+                    <a href="# " class="nav-link fs-7 ">Términos</a>
+                    <a href="# " class="nav-link fs-7 ">Mapa del Sitio</a>
+                    <a href="# " class="nav-link fs-7 ">Datos de la Empresa</a>
+                </div>
+
+                <div class="col-md-4 pt-4 mb-3 mb-md-0 d-md-block d-flex flex-column justify-content-between align-items-center ">
+                    <div class="d-flex flex-md-column justify-content-md-between align-items-md-center ">
+                        <img src="build/img/LogoBlanco.svg " alt="logo footer ">
+                    </div>
+
+                    <div class="d-md-flex justify-content-md-between align-items-md-center ">
+                        <i class="bi bi-instagram me-2 mx-md-auto "></i>
+                        <i class="bi bi-facebook me-2 mx-md-auto "></i>
+                        <i class="bi bi-telegram me-2 mx-md-auto "></i>
+                        <i class="bi bi-twitter me-2 mx-md-auto "></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 enlaces__footer d-md-block d-flex flex-column justify-content-between align-items-center ">
+                    <p class="m-0 mt-n1 fw-bold ">¿Dudas? </p>
+                    <p class="m-0 mt-md-n1 fw-bold ">Encuentranos</p>
+                    <a href="# " class="nav-link fs-7 ">¿Qué es  MiViaje.com?</a>
+                    <a href="# " class="nav-link fs-7 ">Privacidad</a>
+                    <a href="# " class="nav-link fs-7 ">Términos</a>
+                    <a href="# " class="nav-link fs-7 ">Mapa del Sitio</a>
+                </div>
+            </div>
         </div>
-        <div class="dudas">
-            <p>¿Dudas?<br>
-                Encuéntranos</p>
-                <ul class="listaDudas">
-                    <a href="404.html"><li>Centro de ayuda</li></a>
-                    <a href="404.html"><li>Reversión de Pagos</li></a>
-                    <li>(xxx) xxx xxxx xx</li>
-                    <li>info@miviaje.com</li>
-                </ul>
 
+        <div class="border-top mt-2 mt-md-0 ">
+            <p class="text-center fs-7 ">Copyright - Miviaje.com - 2022</p>
         </div>
-
-        <h1 class=logoFooter><a title="logoFooter" href="Index.html">
-                <img id="logoFooter" src="Image/LogoBlanco.svg" alt="logoFooter"></a></h1>
-        <div class="redesSociales">
-
-            <a href="404.html"><img src="Image/Instagram.png" class="instagram"></a>
-            <a href="404.html"><img src="Image/Facebook.png" class="facebook"></a>
-            <a href="404.html"><img src="Image/Telegram.png" class="telegram"></a>
-            <a href="404.html"><img src="Image/Twitter.png" class="twitter"></a>
-
-
-        </div>
-        <p class="txtFinal">Copyright - Miviaje.com - 2022</p>
-
-
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
+    <script src="build/js/app.js "></script>
 </body>
 
 </html>
