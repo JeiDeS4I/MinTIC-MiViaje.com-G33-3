@@ -1,0 +1,7 @@
+@use '../custom' as *;
+@use 'base/mixins' as m;
+.destinos {
+    a {
+        @include m.efecto;
+    }
+}
