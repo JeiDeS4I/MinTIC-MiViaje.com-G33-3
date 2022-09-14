@@ -14,5 +14,5 @@ public interface IReservaService {
 	
 	public Hotel getHotelXId (int id);
 	
-	public void insertHotel(Hotel hotel);
+	public Hotel insertHotel(Hotel hotel);
 }

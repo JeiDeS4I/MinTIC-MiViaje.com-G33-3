@@ -40,9 +40,9 @@ public class ReservaService implements IReservaService {
 	}
 
 	@Override
-	public void insertHotel(Hotel hotel) {
+	public Hotel insertHotel(Hotel hotel) {
 		
-		hotelDao.save(hotel);
+		return hotelDao.save(hotel);
 	}
 
 	
