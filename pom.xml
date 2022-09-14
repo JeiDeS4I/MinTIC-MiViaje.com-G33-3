@@ -8,22 +8,18 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.MinTIC-MiViaje.com-G33-3</groupId>
-	<artifactId>MinTIC-MiViaje.com-G33-3</artifactId>
+	<groupId>com.miviaje.app</groupId>
+	<artifactId>MiViaje</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MinTIC-MiViaje.com-G33-3</name>
-	<description>Demo project for Spring Boot</description>
+	<name>MiViaje</name>
+	<description>WebApp for MiViaje</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,32 +33,20 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- Configuracion del ORM de spring boot para persistencia -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
-		<!-- Conector/libreria de MYSQL para java -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
 	</dependencies>
-
-
 
 	<build>
 		<plugins>
@@ -72,7 +56,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 
 </project>

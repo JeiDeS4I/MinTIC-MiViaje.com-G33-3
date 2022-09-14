@@ -1,8 +1,0 @@
-@use '../custom' as *;
-.enlaces__footer {
-    a {
-        &:hover {
-            color: $secondary;
-        }
-    }
-}
