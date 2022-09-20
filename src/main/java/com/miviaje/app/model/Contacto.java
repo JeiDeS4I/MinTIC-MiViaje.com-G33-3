@@ -1,5 +1,6 @@
 package com.miviaje.app.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,12 +10,18 @@ import javax.persistence.Table;
 public class Contacto {
 
 	@Id
+	@Column(name="idcontacto")
 	private int id;
+	//@Column(name="nombre")
 	private String nombre;
+	//@Column(name="apellido_contacto")
 	private String apellido;
+	//@Column(name="correo_contacto")
 	private String correo;
+	//@Column(name="telefono_contacto")
 	private String telefono;
-	private String mensaje;
+	@Column(name="mensaje")
+	private String mensaje_contacto;
 
 	public Contacto() {
 
@@ -26,7 +33,7 @@ public class Contacto {
 		this.apellido = apellido;
 		this.correo = correo;
 		this.telefono = telefono;
-		this.mensaje = mensaje;
+		this.mensaje_contacto = mensaje;
 	}
 
 	public int getId() {
@@ -70,11 +77,11 @@ public class Contacto {
 	}
 
 	public String getMensaje() {
-		return mensaje;
+		return mensaje_contacto;
 	}
 
 	public void setMensaje(String mensaje) {
-		this.mensaje = mensaje;
+		this.mensaje_contacto = mensaje;
 	}
 
 	@Override
@@ -86,7 +93,7 @@ public class Contacto {
 		sb.append(", apellido=").append(apellido);
 		sb.append(", correo=").append(correo);
 		sb.append(", telefono=").append(telefono);
-		sb.append(", mensaje=").append(mensaje);
+		sb.append(", mensaje=").append(mensaje_contacto);
 		sb.append('}');
 		return sb.toString();
 	}

@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class Hotel {
 
 	@Id
-	@Column(name="id_hoteles")
+	@Column(name = "id_hoteles")
 	private int idHotel;
 	private String nombreHotel;
 	private String ciudad;
@@ -20,8 +20,9 @@ public class Hotel {
 	private String imagen;
 
 	public Hotel() {
-		
+
 	}
+
 	public Hotel(int idHotel, String nombreHotel, String ciudad, int totalHabitaciones, int disponiblesHabitaciones,
 			String costoHabitacion, String imagen) {
 		this.idHotel = idHotel;
